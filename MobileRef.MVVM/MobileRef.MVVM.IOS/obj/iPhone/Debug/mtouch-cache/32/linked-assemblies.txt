@@ -1,0 +1,10 @@
+/Users/Les/Desktop/MobileRef/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhone/Debug/mtouch-cache/32/Link/MobileRef.MVVM.IOS.exe
+/Users/Les/Desktop/MobileRef/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhone/Debug/mtouch-cache/32/Link/mscorlib.dll
+/Users/Les/Desktop/MobileRef/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhone/Debug/mtouch-cache/32/Link/System.Core.dll
+/Users/Les/Desktop/MobileRef/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhone/Debug/mtouch-cache/32/Link/Xamarin.iOS.dll
+/Users/Les/Desktop/MobileRef/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhone/Debug/mtouch-cache/32/Link/MBProgressHUD.dll
+/Users/Les/Desktop/MobileRef/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhone/Debug/mtouch-cache/32/Link/System.Net.Http.dll
+/Users/Les/Desktop/MobileRef/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhone/Debug/mtouch-cache/32/Link/Newtonsoft.Json.dll
+/Users/Les/Desktop/MobileRef/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhone/Debug/mtouch-cache/32/Link/Mono.Dynamic.Interpreter.dll
+/Users/Les/Desktop/MobileRef/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhone/Debug/mtouch-cache/32/Link/System.dll
+/Users/Les/Desktop/MobileRef/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhone/Debug/mtouch-cache/32/Link/System.Runtime.Serialization.dll

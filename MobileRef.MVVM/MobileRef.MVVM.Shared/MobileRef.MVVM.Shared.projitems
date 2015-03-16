@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{083D26A5-991C-400F-88D6-23364B330640}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>MobileRef.MVVM.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ServiceHelpers\LocalStorageService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ServiceHelpers\RestService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AppData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\WeatherData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\WeatherViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\WeatherServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\SharedExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BindingViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DatabaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Base\VMBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\DataHelpers\AppDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Person.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\PersonRespository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Helpers\DataHelpers\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Services\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Extensions\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\Base\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Repositories\" />
+  </ItemGroup>
+</Project>

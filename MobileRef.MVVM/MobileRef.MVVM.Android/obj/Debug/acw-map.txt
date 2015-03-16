@@ -1,0 +1,14 @@
+MobileRef.MVVM.Android.MainActivity;mobileref.mvvm.android.MainActivity
+MobileRef.MVVM.Android.TableDisplay;mobileref.mvvm.android.TableDisplay
+MobileRef.MVVM.Android.CustomSource;mobileref.mvvm.android.CustomSource
+MobileRef.MVVM.Android.NOSqlData;mobileref.mvvm.android.NOSqlData
+MobileRef.MVVM.Android.PeopleViewHolder;mobileref.mvvm.android.PeopleViewHolder
+MobileRef.MVVM.Android.TwoWayBinding;mobileref.mvvm.android.TwoWayBinding
+MobileRef.MVVM.Android.MainApp;mobileref.mvvm.android.MainApp
+MobileRef.MVVM.Android.ViewHolder`1;mobileref.mvvm.android.ViewHolder_1
+MobileRef.MVVM.Android.HolderAdapter`2;mobileref.mvvm.android.HolderAdapter_2
+MobileRef.MVVM.Android.NetworkStatusBroadcastReceiver;mobileref.mvvm.android.NetworkStatusBroadcastReceiver
+AndroidHUD.ProgressWheel;androidhud.ProgressWheel
+AndroidHUD.ProgressWheel.SpinHandler;androidhud.ProgressWheel_SpinHandler
+ModernHttpClient.AwaitableOkHttp.OkTaskCallback;modernhttpclient.AwaitableOkHttp_OkTaskCallback
+ModernHttpClient.HostnameVerifier;modernhttpclient.HostnameVerifier

@@ -1,0 +1,15 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MobileShared.Business", "MobileShared.Business\MobileShared.Business.shproj", "{1F9CB36A-1B97-406C-9926-791EBA4D09F5}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MobileShared.Android", "MobileShared.Android\MobileShared.Android.shproj", "{F1805CC5-7AD1-48BA-A9F1-B92FA5A3D4D7}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MobileShared.IOS", "MobileShared.IOS\MobileShared.IOS.shproj", "{76267674-38C1-4904-B49E-0FD5064A35DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+	EndGlobalSection
+EndGlobal
