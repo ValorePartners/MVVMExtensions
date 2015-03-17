@@ -73,7 +73,7 @@ namespace MobileRef.MVVM.IOS
 			if (args is PropertyChangedEventArgs) {
 				var propName = ((PropertyChangedEventArgs)args).PropertyName;
 				switch (propName) {
-				case "SelectedItem":
+				case "SelectedWeather":
 					this.ShowMessage ("Selected", VM.SelectedWeather.description);
 					break;
 				}
@@ -138,9 +138,11 @@ namespace MobileRef.MVVM.IOS
 
 		public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
 		{
+
 			this.SelectedItem = Items [indexPath.Row];
+			tableView.DeselectRow (indexPath, true);
 			if (RowSelectedEvent != null)
-				RowSelectedEvent (this, null);
+				RowSelectedEvent (this, new RowSelectedEventArgs());
 		}
 
 	}

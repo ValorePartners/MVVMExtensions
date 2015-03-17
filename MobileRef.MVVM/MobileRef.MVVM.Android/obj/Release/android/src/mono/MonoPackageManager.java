@@ -72,6 +72,7 @@ class MonoPackageManager_Resources {
 		"AndHUD.dll",
 		"ModernHttpClient.dll",
 		"OkHttp.dll",
+		"Sterling.Android.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

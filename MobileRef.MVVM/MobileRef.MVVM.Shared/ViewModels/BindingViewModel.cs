@@ -8,8 +8,18 @@ namespace MobileRef.MVVM.Shared
 	{
 		private int cnt = 0;
 		private string helloText;
+		private int age;
 		public ICommand TestExecute{ get; set; }
 
+		public int Age {
+			get {
+				return age;
+			}
+			set {
+				age = value;
+				Notify ("Age");
+			}
+		}
 
 		public string HelloText {
 			get {

@@ -1,11 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5s.8.2" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MobileRef.MVVM/MobileRef.MVVM.Shared/Helpers/DataHelpers/AppDatabase.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MobileRef.MVVM/MobileRef.MVVM.IOS/Controllers/TwoWayBinding.cs">
     <Files>
-      <File FileName="MobileRef.MVVM/MobileRef.MVVM.Android/Framework/MVVMExtensions.cs" Line="1" Column="1" />
-      <File FileName="MobileRef.MVVM/MobileRef.MVVM.Android/Activities/NOSqlData.cs" Line="1" Column="1" />
-      <File FileName="MobileRef.MVVM/MobileRef.MVVM.Shared/AppData.cs" Line="1" Column="1" />
-      <File FileName="MobileRef.MVVM/MobileRef.MVVM.Shared/Helpers/DataHelpers/AppDatabase.cs" Line="69" Column="19" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS/Framework/MVVMExtensions.cs" Line="286" Column="1" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS/Controllers/TableDisplay.cs" Line="144" Column="33" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS/Framework/VPControllerExtensions.cs" Line="9" Column="2" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS/Framework/VPExtensionHelpers.cs" Line="222" Column="19" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS/Controllers/TwoWayBinding.cs" Line="33" Column="42" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.Shared/Helpers/DataHelpers/AppDatabase.cs" Line="57" Column="1" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.Shared/ViewModels/WeatherViewModel.cs" Line="35" Column="46" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.Shared/ViewModels/BindingViewModel.cs" Line="19" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

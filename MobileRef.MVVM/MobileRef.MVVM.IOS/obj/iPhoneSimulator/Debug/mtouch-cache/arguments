@@ -4,9 +4,9 @@
 	--cache \
 	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
-	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug/MobileRef.MVVM.IOS.app \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug/MobileRefMVVMIOS.app \
 	--executable \
-	MobileRef.MVVM.IOS \
+	MobileRefMVVMIOS \
 	--debug \
 	--nolink \
 	--sdkroot \
@@ -15,6 +15,7 @@
 	8.2 \
 	--targetver \
 	8.0 \
+	--new-refcount \
 	--abi=i386 \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
@@ -44,4 +45,4 @@
 	../Components/modernhttpclient-2.2.0/lib/ios-unified/ModernHttpClient.dll \
 	-r \
 	Library/Sterling.IOS.dll \
-	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug//MobileRef.MVVM.IOS.exe \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug//MobileRefMVVMIOS.exe \

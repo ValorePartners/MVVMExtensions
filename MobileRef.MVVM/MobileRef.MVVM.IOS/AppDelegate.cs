@@ -2,6 +2,7 @@
 using UIKit;
 using MobileRef.MVVM.Shared;
 
+
 namespace MobileRef.MVVM.IOS
 {
 	// The UIApplicationDelegate for the application. This class is responsible for launching the
@@ -25,7 +26,10 @@ namespace MobileRef.MVVM.IOS
 			//This makes sure that the control event and properties are not stripped by the linker 
 			LinkerPrepare.Init ();
 
-
+			Reachability.StateChanged += (state) => {
+				AppData.IsConnected = state;
+			};
+			Reachability.Start ();
 			return true;
 		}
 		

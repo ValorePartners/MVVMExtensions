@@ -1,8 +1,8 @@
 using System;
-using Foundation;
 using UIKit;
 using MobileRef.MVVM.Shared;
 using System.Linq;
+
 namespace MobileRef.MVVM.IOS
 {
 	public partial class NOSqlData : UIViewController,IHandlers

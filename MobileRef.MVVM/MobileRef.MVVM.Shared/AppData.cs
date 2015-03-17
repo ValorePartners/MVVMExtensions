@@ -21,7 +21,7 @@ namespace MobileRef.MVVM.Shared
 		public static DatabaseViewModel DatabaseVM {
 			get {
 				if (databaseVM == null) {
-					databaseVM = Storage.GetIsolatedStorageSync<DatabaseViewModel> ("DatabaseViewModel");
+					databaseVM = Storage.GetIsolatedStorage<DatabaseViewModel> ("DatabaseViewModel");
 					if (databaseVM == null)
 						databaseVM = new DatabaseViewModel ();
 				}
@@ -34,7 +34,7 @@ namespace MobileRef.MVVM.Shared
 		public static BindingViewModel BindingVM {
 			get {
 				if (bindingVM == null) {
-					bindingVM = Storage.GetIsolatedStorageSync<BindingViewModel> ("BindingViewModel");
+					bindingVM = Storage.GetIsolatedStorage<BindingViewModel> ("BindingViewModel");
 					if (bindingVM == null)
 						bindingVM = new BindingViewModel ();
 				}
@@ -47,7 +47,7 @@ namespace MobileRef.MVVM.Shared
 		public static WeatherViewModel WeatherVM {
 			get {
 				if (weatherVM == null) {
-					weatherVM = Storage.GetIsolatedStorageSync<WeatherViewModel> ("WeatherViewModel");
+					weatherVM = Storage.GetIsolatedStorage<WeatherViewModel> ("WeatherViewModel");
 					if (weatherVM == null)
 						weatherVM = new WeatherViewModel ();
 				}
@@ -59,13 +59,13 @@ namespace MobileRef.MVVM.Shared
 		}
 
 		public static async void SaveDatabaseVM(){
-			await Storage.SaveIsolatedStorage<DatabaseViewModel> ("DatabaseViewModel", databaseVM);
+			await Storage.SaveIsolatedStorageAsync<DatabaseViewModel> ("DatabaseViewModel", databaseVM);
 		}
 		public static async void SaveBindingVM(){
-			await Storage.SaveIsolatedStorage<BindingViewModel> ("BindingViewModel", bindingVM);
+			await Storage.SaveIsolatedStorageAsync<BindingViewModel> ("BindingViewModel", bindingVM);
 		}
 		public static async void SaveWeatherVM(){
-			await Storage.SaveIsolatedStorage<WeatherViewModel> ("WeatherViewModel", weatherVM);
+			await Storage.SaveIsolatedStorageAsync<WeatherViewModel> ("WeatherViewModel", weatherVM);
 		}	
 		public static void ClearStateManagement(){
 			Storage.DeleteIsolatedStorage ("DatabaseViewModel");

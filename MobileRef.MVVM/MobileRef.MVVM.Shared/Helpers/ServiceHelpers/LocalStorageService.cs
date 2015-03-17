@@ -8,7 +8,7 @@ namespace  MobileRef.MVVM.Shared
 {
 	public class LocalStorageService
 	{
-		public Task<T> GetIsolatedStorage<T> (string contentName) where T : new()
+		public Task<T> GetIsolatedStorageAsync<T> (string contentName) where T : new()
 		{
 			Task<T> task = new Task<T> (() => {
 				using (var isoStorage = IsolatedStorageFile.GetUserStoreForApplication ()) {
@@ -29,7 +29,7 @@ namespace  MobileRef.MVVM.Shared
 
 		}
 
-		public T GetIsolatedStorageSync<T> (string contentName) where T : class
+		public T GetIsolatedStorage<T> (string contentName) where T : class
 		{
 			using (var isoStorage = IsolatedStorageFile.GetUserStoreForApplication ()) {
 				if (isoStorage.FileExists (contentName)) {
@@ -55,7 +55,7 @@ namespace  MobileRef.MVVM.Shared
 			}
 		}
 
-		public Task<int> SaveIsolatedStorage<T> (string contentName, object obj)
+		public Task<int> SaveIsolatedStorageAsync<T> (string contentName, object obj)
 		{
 			Task<int> task = new Task<int> (() => {
 				try {
@@ -77,7 +77,7 @@ namespace  MobileRef.MVVM.Shared
 			return task;
 		}
 
-		public int SaveIsolatedStorageSync<T> (string contentName, object obj) where T : class
+		public int SaveIsolatedStorage<T> (string contentName, object obj) where T : class
 		{
 
 			try {

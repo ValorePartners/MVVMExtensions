@@ -1,12 +1,12 @@
-# Version: 8.6.3.3 (90e32d0)
-# [first argument, ignore] # /Users/Les/Desktop/MobileRef/MobileRef.MVVM/MobileRef.MVVM.IOS/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/8.6.3.3/bin/mtouch-64 \
+# Version: 8.8.0.2 (ccfcd59)
+# [first argument, ignore] # /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.8.0.2/bin/mtouch-64 \
 	--cache \
-	/Users/Les/Desktop/MobileRef/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhone/Debug/mtouch-cache \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhone/Debug/mtouch-cache \
 	--dev \
-	/Users/Les/Desktop/MobileRef/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhone/Debug/MobileRef.MVVM.IOS.app \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhone/Debug/MobileRefMVVMIOS.app \
 	--executable \
-	MobileRef.MVVM.IOS \
+	MobileRefMVVMIOS \
 	--debug \
 	--linksdkonly \
 	--sdkroot \
@@ -29,6 +29,10 @@
 	-r \
 	../Components/mbprogresshud-0.9.0.1/lib/ios-unified/MBProgressHUD.dll \
 	-r \
+	../Components/modernhttpclient-2.2.0/lib/ios-unified/ModernHttpClient.dll \
+	-r \
+	Library/Sterling.IOS.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
@@ -36,4 +40,8 @@
 	../packages/Newtonsoft.Json.6.0.8/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
 	-r \
 	../Components/mbprogresshud-0.9.0.1/lib/ios-unified/MBProgressHUD.dll \
-	/Users/Les/Desktop/MobileRef/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhone/Debug//MobileRef.MVVM.IOS.exe \
+	-r \
+	../Components/modernhttpclient-2.2.0/lib/ios-unified/ModernHttpClient.dll \
+	-r \
+	Library/Sterling.IOS.dll \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhone/Debug//MobileRefMVVMIOS.exe \

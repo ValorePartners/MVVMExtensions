@@ -32,4 +32,7 @@
     <Folder Include="$(MSBuildThisFileDirectory)ViewModels\Base\" />
     <Folder Include="$(MSBuildThisFileDirectory)Repositories\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)reference_readme.txt" />
+  </ItemGroup>
 </Project>

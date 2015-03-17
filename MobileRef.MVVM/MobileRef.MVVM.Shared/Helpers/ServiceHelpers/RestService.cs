@@ -7,9 +7,6 @@ using System.Net.Http;
 
 #if __ANDROID__
 using ModernHttpClient;
-
-
-
 #elif __IOS__
 using ModernHttpClient;
 #endif

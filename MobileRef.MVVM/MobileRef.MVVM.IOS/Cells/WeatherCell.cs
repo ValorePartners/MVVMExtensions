@@ -1,9 +1,8 @@
-﻿
-using System;
-
+﻿using System;
 using Foundation;
 using UIKit;
 using MobileRef.MVVM.Shared;
+
 
 namespace MobileRef.MVVM.IOS
 {

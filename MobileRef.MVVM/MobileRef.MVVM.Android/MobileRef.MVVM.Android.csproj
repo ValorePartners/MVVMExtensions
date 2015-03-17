@@ -70,6 +70,11 @@
     <Compile Include="MainApp.cs" />
     <Compile Include="Framework\MVVMExtensions.cs" />
     <Compile Include="CustomControls\BindableHUD.cs" />
+    <Compile Include="Framework\VPActivityExtensions.cs" />
+    <Compile Include="Framework\VPFragmentExtensions.cs" />
+    <Compile Include="Framework\VPControlExtensions.cs" />
+    <Compile Include="Framework\VPExtensionHelpers.cs" />
+    <Compile Include="Framework\Reachability.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

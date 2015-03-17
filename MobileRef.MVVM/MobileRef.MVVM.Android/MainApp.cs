@@ -22,6 +22,10 @@ namespace MobileRef.MVVM.Android
 			//This makes sure that the control event and properties are not stripped by the linker 
 			LinkerPrepare.Init (this.ApplicationContext);
 
+			Reachability.StateChanged += (state) => {
+				AppData.IsConnected = state;
+			};
+			Reachability.Start ();
 
 			AppDb.Init ();
 			Preload.InitDatabase ();

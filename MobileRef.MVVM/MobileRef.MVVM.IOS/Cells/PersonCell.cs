@@ -1,6 +1,4 @@
-﻿
-using System;
-
+﻿using System;
 using Foundation;
 using UIKit;
 using MobileRef.MVVM.Shared;

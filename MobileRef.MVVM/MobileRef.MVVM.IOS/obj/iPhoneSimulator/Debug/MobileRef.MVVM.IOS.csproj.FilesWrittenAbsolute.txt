@@ -15,10 +15,10 @@
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhoneSimulator/Debug/actool/partial-info.plist
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhoneSimulator/Debug/actool/asset-manifest.plist
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhoneSimulator/Debug/
-/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug/MobileRef.MVVM.IOS.exe.mdb
-/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug/MobileRef.MVVM.IOS.exe
-/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhoneSimulator/Debug/MobileRef.MVVM.IOS.exe
-/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhoneSimulator/Debug/MobileRef.MVVM.IOS.exe.mdb
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug/MobileRefMVVMIOS.exe.mdb
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug/MobileRefMVVMIOS.exe
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhoneSimulator/Debug/MobileRefMVVMIOS.exe
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhoneSimulator/Debug/MobileRefMVVMIOS.exe.mdb
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug/MBProgressHUD.dll
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug/ModernHttpClient.dll
