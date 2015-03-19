@@ -141,11 +141,12 @@ namespace MobileRef.MVVM.Android
 	
 		public void UpdateCollection (System.Collections.ICollection collection)
 		{
-			var List = new List<WeatherData> ();
-			foreach (var item in collection) {
-				List.Add ((WeatherData)item);
-			}
-			Items = List.ToArray ();
+//			var List = new List<WeatherData> ();
+//			foreach (var item in collection) {
+//				List.Add ((WeatherData)item);
+//			}
+//			Items = List.ToArray ();
+			Items = collection.ToArray<WeatherData>();
 			this.NotifyDataSetChanged ();
 		}
 

@@ -31,7 +31,6 @@ namespace MobileRef.MVVM.Android
 					AndHUD.Shared.Show (ctx, Message, (int)MaskType.Clear);
 				else
 					AndHUD.Shared.Dismiss(ctx);
-				//AndHUD.Shared.Show(myActivity, "Status Message", MaskType.Clear);
 			}
 		}
 	}

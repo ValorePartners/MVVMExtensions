@@ -1,9 +1,14 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
-
+#if __ANDROID__
+using Android.Runtime;
+#elif __IOS__
+using Foundation;
+#endif
 namespace MobileRef.MVVM.Shared
 {
+	[Preserve(AllMembers=true)]
 	public class WeatherViewModel:VMBase
 	{
 		private string searchLocation;

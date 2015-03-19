@@ -9,30 +9,28 @@
     <Import_RootNamespace>MobileRef.MVVM.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ServiceHelpers\LocalStorageService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ServiceHelpers\RestService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AppData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\WeatherData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\WeatherViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\WeatherServices.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Extensions\SharedExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BindingViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DatabaseViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Base\VMBase.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Helpers\DataHelpers\AppDatabase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Person.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Repositories\PersonRespository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataHelpers\AppDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\VMBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\SharedExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\LocalStorageService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\RestService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Helpers\DataHelpers\" />
     <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
     <Folder Include="$(MSBuildThisFileDirectory)Models\" />
     <Folder Include="$(MSBuildThisFileDirectory)Services\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Extensions\" />
-    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\Base\" />
     <Folder Include="$(MSBuildThisFileDirectory)Repositories\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Extensions\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)reference_readme.txt" />
+    <None Include="$(MSBuildThisFileDirectory)nosql_reference.txt" />
   </ItemGroup>
 </Project>

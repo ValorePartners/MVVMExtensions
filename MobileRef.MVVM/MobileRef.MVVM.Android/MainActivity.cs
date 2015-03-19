@@ -101,7 +101,7 @@ namespace MobileRef.MVVM.Android
 					this.ShowMessage ("Simple Message", "You clicked the button!");
 					break;
 				case Resource.Id.btnProgress:
-					VM.LongExecution ();
+					//VM.LongExecution ();
 					break;
 				}
 

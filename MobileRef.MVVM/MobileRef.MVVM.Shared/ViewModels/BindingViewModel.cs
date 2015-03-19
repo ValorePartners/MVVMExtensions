@@ -1,9 +1,15 @@
 ﻿using System;
 using System.Windows.Input;
-
+using System.Threading.Tasks;
+using System.Threading;
+#if __ANDROID__
+using Android.Runtime;
+#elif __IOS__
+using Foundation;
+#endif
 namespace MobileRef.MVVM.Shared
 {
-
+	[Preserve(AllMembers=true)]
 	public class BindingViewModel: VMBase
 	{
 		private int cnt = 0;
@@ -36,6 +42,27 @@ namespace MobileRef.MVVM.Shared
 			TestExecute = new RelayCommand (() => {
 				HelloText="Clicked " + cnt++;
 				this.LongExecution();
+			});
+		}
+
+		public async void LongExecution ()
+		{
+			try {
+				LoadMessage = "Long running process...";
+				IsLoading = true;
+				await this.DoLongExecution ();
+				IsLoading = false;
+			} catch (Exception ex) {
+				IsLoading = false;
+			}
+		}
+
+		private async Task<bool> DoLongExecution ()
+		{
+
+			return await Task.Run (() => {
+				Thread.Sleep (5000);
+				return true;
 			});
 		}
 

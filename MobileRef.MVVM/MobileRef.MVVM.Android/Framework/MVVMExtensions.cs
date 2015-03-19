@@ -116,13 +116,13 @@ namespace MobileRef.MVVM.Android
 
 	[Preserve (AllMembers = true)]
 	public class BindingManager<T,K> 
-		where T: Activity, IHandlers
+		where T: class, IHandlers
 		where K:INotifyPropertyChanged
 	{
 		private List<PropertyBindingSettings> pbs;
 		private List<EventBindingSettings> ebs;
 		private K viewModel;
-		private T activity;
+		private T bindingObj;
 
 		public void BindProperty (string bindingObject, string bindingProperty, string eventName, string viewModelProperty, string format)
 		{
@@ -211,10 +211,9 @@ namespace MobileRef.MVVM.Android
 			BindCommand (controlName, eventName, vmFieldName);
 		}
 
-		public void RegisterBindingEvents (T activity, K viewModel, bool registerDefaultControls = true)
+		public void RegisterBindingEvents (T bindingObj, K viewModel, bool registerDefaultControls = true)
 		{
-			LinkerPrepare.Init (activity);
-			this.activity = activity;
+			this.bindingObj = bindingObj;
 			this.viewModel = viewModel;
 			foreach (var obj in pbs) {
 				ConnectPropertyBindingSetting (obj);
@@ -233,12 +232,12 @@ namespace MobileRef.MVVM.Android
 			}
 
 			if (registerDefaultControls) {
-				activity.RegisterEvents (this.ebs);
+				bindingObj.RegisterEvents (this.ebs);
 			}
 
 		}
 
-		public void UnRegisterBindingEvents (T activity,bool unRegisterDefaultControls = true)
+		public void UnRegisterBindingEvents (T bindingObject,bool unRegisterDefaultControls = true)
 		{
 			foreach (var obj in pbs) {
 				DisconnectPropertyBindingSetting (obj);
@@ -257,7 +256,7 @@ namespace MobileRef.MVVM.Android
 			}
 
 			if (unRegisterDefaultControls) {
-				activity.UnRegisterEvents ();
+				bindingObject.UnRegisterEvents ();
 			}
 
 		}
@@ -325,7 +324,7 @@ namespace MobileRef.MVVM.Android
 								var ctrlProp = typeof(T).GetProperty (obj.BindingObject, BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public);
 								var ib = ctrlProp.PropertyType.GetInterface ("IBaseAdapter");
 								if (ib != null) {
-									var ctrlInstance = ctrlProp.GetValue (activity);
+									var ctrlInstance = ctrlProp.GetValue (bindingObj);
 									((IBaseAdapter)ctrlInstance).UpdateCollection ((ICollection)sender);
 								}
 
@@ -342,7 +341,7 @@ namespace MobileRef.MVVM.Android
 					if (!string.IsNullOrEmpty (obj.EventName))
 						DisconnectPropertyBindingSetting (obj);
 					var ctrlProp = typeof(T).GetProperty (obj.BindingObject, BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public);
-					var ctrlInstance = ctrlProp.GetValue (activity);
+					var ctrlInstance = ctrlProp.GetValue (bindingObj);
 					var ctrlInstaceProp = ctrlInstance.GetType ().GetProperty (obj.BindingProperty,BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public);
 					var currentValue = ctrlInstaceProp.GetValue (ctrlInstance);
 					var vmProp = sender.GetType ().GetProperty (obj.ViewModelProperty,BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public);
@@ -387,7 +386,7 @@ namespace MobileRef.MVVM.Android
 			var prop = typeof(T).GetProperty (setting.BindingObject,BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public);
 			if (prop != null) {
 				if (!string.IsNullOrEmpty (setting.EventName)) {
-					var instance = prop.GetValue (activity);
+					var instance = prop.GetValue (bindingObj);
 					var eventInstance = instance.GetType ().GetEvent (setting.EventName);
 					if (eventInstance != null) {
 						var tDelegate = eventInstance.EventHandlerType;
@@ -408,7 +407,7 @@ namespace MobileRef.MVVM.Android
 			var prop = typeof(T).GetProperty (setting.BindingObject,BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public);
 			if (prop != null) {
 				if (!string.IsNullOrEmpty (setting.EventName)) {
-					var instance = prop.GetValue (activity);
+					var instance = prop.GetValue (bindingObj);
 					var eventInstance = instance.GetType ().GetEvent (setting.EventName);
 					if (eventInstance != null) {
 						var tDelegate = eventInstance.EventHandlerType;
@@ -429,7 +428,7 @@ namespace MobileRef.MVVM.Android
 			var prop = typeof(T).GetProperty (setting.BindingObject, BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public);
 			if (prop != null) {
 				if (!string.IsNullOrEmpty (setting.EventName)) {
-					var instance = prop.GetValue (activity);
+					var instance = prop.GetValue (bindingObj);
 					var eventInstance = instance.GetType ().GetEvent (setting.EventName);
 					if (eventInstance != null) {
 						var tDelegate = eventInstance.EventHandlerType;
@@ -450,7 +449,7 @@ namespace MobileRef.MVVM.Android
 			var prop = typeof(T).GetProperty (setting.BindingObject, BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public);
 			if (prop != null) {
 				if (!string.IsNullOrEmpty (setting.EventName)) {
-					var instance = prop.GetValue (activity);
+					var instance = prop.GetValue (bindingObj);
 					var eventInstance = instance.GetType ().GetEvent (setting.EventName);
 					if (eventInstance != null) {
 						var tDelegate = eventInstance.EventHandlerType;
@@ -518,13 +517,14 @@ namespace MobileRef.MVVM.Android
 	{
 
 		public static void RegisterEvents<T> (this T obj) 
-			where T: Activity, IHandlers
+			where T: class, IHandlers
 		{
 			obj.RegisterEvents (new List<EventBindingSettings> ());
 		}
-
+			
+			
 		public static void RegisterEvents<T> (this T obj, List<EventBindingSettings> ebs) 
-			where T: Activity, IHandlers
+			where T: class, IHandlers
 		{
 			var iEvent = (IHandlers)obj;
 			foreach (var prop in typeof(T).GetProperties(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public)) {
@@ -570,9 +570,10 @@ namespace MobileRef.MVVM.Android
 				}
 			}
 		}
+			
 
 		public static void UnRegisterEvents<T> (this T obj) 
-			where T: Activity, IHandlers
+			where T: class, IHandlers
 		{
 			var iEvent = (IHandlers)obj;
 			foreach (var prop in typeof(T).GetProperties(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public)) {
