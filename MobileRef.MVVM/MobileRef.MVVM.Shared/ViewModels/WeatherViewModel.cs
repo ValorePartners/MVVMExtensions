@@ -69,7 +69,9 @@ namespace MobileRef.MVVM.Shared
 					this.LoadMessage = "Searching weather information...";
 					this.IsLoading = true;
 					var data = await weatherService.GetWeatherDataForLocation (SearchLocation);
-					WeatherCollection = data.ToObservable ();
+		
+					WeatherCollection =data.ToObservable();
+
 					this.IsLoading = false;
 				}
 			});

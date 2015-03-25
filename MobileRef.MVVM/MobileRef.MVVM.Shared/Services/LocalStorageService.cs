@@ -9,18 +9,22 @@ namespace  MobileRef.MVVM.Shared
 
 	public class LocalStorageService
 	{
-		public Task<T> GetIsolatedStorageAsync<T> (string contentName) where T : new()
+		public Task<T> GetIsolatedStorageAsync<T> (string contentName) where T : class
 		{
 			Task<T> task = new Task<T> (() => {
 				using (var isoStorage = IsolatedStorageFile.GetUserStoreForApplication ()) {
 					if (isoStorage.FileExists (contentName)) {
-						var s = isoStorage.OpenFile (contentName, FileMode.OpenOrCreate);
-						var sr = new StreamReader (s);
-						var content = sr.ReadToEnd ();
-						sr.Close ();
-						return JsonConvert.DeserializeObject<T> (content);
+						try {
+							var s = isoStorage.OpenFile (contentName, FileMode.OpenOrCreate);
+							var sr = new StreamReader (s);
+							var content = sr.ReadToEnd ();
+							sr.Close ();
+							return JsonConvert.DeserializeObject<T> (content);
+						} catch {
+							return null;
+						}
 					} else {
-						return new T ();
+						return null;
 					}
 				}
 
@@ -34,11 +38,15 @@ namespace  MobileRef.MVVM.Shared
 		{
 			using (var isoStorage = IsolatedStorageFile.GetUserStoreForApplication ()) {
 				if (isoStorage.FileExists (contentName)) {
-					var s = isoStorage.OpenFile (contentName, FileMode.OpenOrCreate);
-					var sr = new StreamReader (s);
-					var content = sr.ReadToEnd ();
-					sr.Close ();
-					return JsonConvert.DeserializeObject<T> (content);
+					try {
+						var s = isoStorage.OpenFile (contentName, FileMode.OpenOrCreate);
+						var sr = new StreamReader (s);
+						var content = sr.ReadToEnd ();
+						sr.Close ();
+						return JsonConvert.DeserializeObject<T> (content);
+					} catch {
+						return null;
+					}
 				} else {
 					return null;
 				}

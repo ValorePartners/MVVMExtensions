@@ -12,6 +12,7 @@ namespace MobileRef.MVVM.IOS
 	public partial class TableDisplay : UITableViewController,IHandlers
 	{
 		private BindableProgress Progress{ get; set; }
+
 		public WeatherViewModel VM{ get; set; }
 
 		private BindingManager<TableDisplay,WeatherViewModel> bind;
@@ -34,7 +35,7 @@ namespace MobileRef.MVVM.IOS
 
 			//Two ways to create and use a UITableViewSource
 			//Source = new TableSource<WeatherData, WeatherCell> (VM.WeatherCollection.ToArray (), "WeatherCell"){ TableView = TableView };
-			Source = new CustomSource (VM.WeatherCollection.ToArray ()){ TableView = this.TableView };
+			Source = new CustomSource (VM.WeatherCollection.ToArray (), this){ TableView = this.TableView };
 
 			this.NavigationItem.SetRightBarButtonItem (
 				new UIBarButtonItem (UIBarButtonSystemItem.Action, (sender, args) => {
@@ -93,6 +94,8 @@ namespace MobileRef.MVVM.IOS
 	public class CustomSource:UITableViewSource,IBaseSource
 	{
 		private string cellId = "PersonCellId";
+
+		public event EventHandler PaginationEvent;
 		public event EventHandler RowSelectedEvent;
 
 		public WeatherData[] Items{ get; set; }
@@ -103,7 +106,8 @@ namespace MobileRef.MVVM.IOS
 
 		public nint Tag { get; set; }
 
-		public CustomSource (WeatherData[] items)
+
+		public CustomSource (WeatherData[] items, UITableViewController parent)
 		{
 			this.Items = items;
 		}
@@ -138,11 +142,25 @@ namespace MobileRef.MVVM.IOS
 
 		public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
 		{
-
 			this.SelectedItem = Items [indexPath.Row];
 			tableView.DeselectRow (indexPath, true);
 			if (RowSelectedEvent != null)
-				RowSelectedEvent (this, new RowSelectedEventArgs());
+				RowSelectedEvent (this, new RowSelectedEventArgs ());
+		}
+
+		public override void Scrolled (UIScrollView scrollView)
+		{
+			var totalRenderedHeight = TableView.RowHeight * Items.Length;
+			var maxHeight = totalRenderedHeight + (.075 * TableView.RowHeight);
+			var currentHeight = TableView.Frame.Size.Height;
+			var offSet = scrollView.ContentOffset.Y;
+			if (offSet > 0) {
+				var distanceFromBottom = currentHeight + offSet;
+				if ((distanceFromBottom > maxHeight) && (totalRenderedHeight > currentHeight)) {
+					if (PaginationEvent != null)
+						PaginationEvent (this, null);
+				}
+			}
 		}
 
 	}

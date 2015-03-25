@@ -300,7 +300,11 @@ namespace MobileRef.MVVM.IOS
 
 		private void InternalCommandEventHandler (object sender, EventArgs args)
 		{
-			var tag = ((UIControl)sender).Tag;
+			nint tag = 0;
+			if(sender is UIControl)
+				tag = ((UIControl)sender).Tag;
+			if(sender is IBaseSource)
+				tag = ((IBaseSource)sender).Tag;
 			var ctrl = ebs.FirstOrDefault (x => x.Tag == tag);
 
 			if (ctrl != null) {
