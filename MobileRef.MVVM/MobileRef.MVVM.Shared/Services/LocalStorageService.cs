@@ -1,8 +1,8 @@
 using System;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 using System.IO.IsolatedStorage;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace  MobileRef.MVVM.Shared
 {

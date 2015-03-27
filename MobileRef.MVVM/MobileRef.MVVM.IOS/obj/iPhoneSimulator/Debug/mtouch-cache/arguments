@@ -24,8 +24,6 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
 	-r \
-	../packages/Newtonsoft.Json.6.0.8/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
-	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Net.Http.dll \
 	-r \
 	../Components/mbprogresshud-0.9.0.1/lib/ios-unified/MBProgressHUD.dll \
@@ -34,15 +32,17 @@
 	-r \
 	Library/Sterling.IOS.dll \
 	-r \
+	../packages/Newtonsoft.Json.6.0.8/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
-	-r \
-	../packages/Newtonsoft.Json.6.0.8/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
 	-r \
 	../Components/mbprogresshud-0.9.0.1/lib/ios-unified/MBProgressHUD.dll \
 	-r \
 	../Components/modernhttpclient-2.2.0/lib/ios-unified/ModernHttpClient.dll \
 	-r \
 	Library/Sterling.IOS.dll \
+	-r \
+	../packages/Newtonsoft.Json.6.0.8/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
 	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug//MobileRefMVVMIOS.exe \

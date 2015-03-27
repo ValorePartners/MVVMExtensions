@@ -19,7 +19,7 @@
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug/MobileRefMVVMIOS.exe
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhoneSimulator/Debug/MobileRefMVVMIOS.exe
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhoneSimulator/Debug/MobileRefMVVMIOS.exe.mdb
-/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug/MBProgressHUD.dll
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug/ModernHttpClient.dll
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug/Sterling.IOS.dll
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll

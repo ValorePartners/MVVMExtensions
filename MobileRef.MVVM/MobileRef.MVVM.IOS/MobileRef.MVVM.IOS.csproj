@@ -104,9 +104,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="MBProgressHUD">
       <HintPath>..\Components\mbprogresshud-0.9.0.1\lib\ios-unified\MBProgressHUD.dll</HintPath>
@@ -116,6 +113,9 @@
     </Reference>
     <Reference Include="Sterling.IOS">
       <HintPath>Library\Sterling.IOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -132,8 +132,8 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
-    <None Include="packages.config" />
     <None Include="Library\Sterling.IOS.dll" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -184,6 +184,10 @@
     </XamarinComponentReference>
     <XamarinComponentReference Include="modernhttpclient">
       <Version>2.2.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="json.net">
+      <Version>6.0.8.1</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>

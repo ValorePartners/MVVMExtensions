@@ -2,8 +2,10 @@ using System;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+
 using Newtonsoft.Json;
 using System.Net.Http;
+
 
 namespace  MobileRef.MVVM.Shared
 {
@@ -81,11 +83,12 @@ namespace  MobileRef.MVVM.Shared
 			});
 		}
 
-		public async Task<T> PostAsync<T> (string url, object obj) where T : class, new()
+		public async Task<T> PostAsync<T> (string url, object obj) where T :class, new()
 		{
 			return await Task.Run (async () => {
 				try {
 					using (var client = GetClient (null)) {
+
 						var data = JsonConvert.SerializeObject (obj);
 						var response = client.PostAsync (url, new StringContent (data, Encoding.UTF8, "application/json")).Result;
 						var jsonResult = await response.Content.ReadAsStringAsync ();
@@ -120,7 +123,7 @@ namespace  MobileRef.MVVM.Shared
 			});
 		}
 
-		public async Task<T> PutAsync<T> (string url, object obj, NetworkCredential credentials) where T : class, new()
+			public async Task<T> PutAsync<T> (string url, object obj, NetworkCredential credentials) where T : class, new()
 		{
 			return await Task.Run (async () => {
 				try {
