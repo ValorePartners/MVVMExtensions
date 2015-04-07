@@ -9,7 +9,7 @@ namespace MobileRef.MVVM.IOS
 		public MainView (IntPtr handle) : base (handle)
 		{
 		}
-
+			
 		public override void ViewWillAppear (bool animated)
 		{
 			this.RegisterEvents ();

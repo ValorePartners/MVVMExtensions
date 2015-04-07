@@ -68,11 +68,11 @@ public class MonoPackageManager {
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"MobileRef.MVVM.Android.dll",
-		"Newtonsoft.Json.dll",
 		"AndHUD.dll",
 		"ModernHttpClient.dll",
 		"OkHttp.dll",
 		"Sterling.Android.dll",
+		"Newtonsoft.Json.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

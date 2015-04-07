@@ -1,26 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5.8.2" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MobileRef.MVVM/MobileRef.MVVM.Shared/Services/RestService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MobileRef.MVVM/MobileRef.MVVM.Android.Test/MVVMAndroidTest.cs">
     <Files>
-      <File FileName="MobileRef.MVVM/MobileRef.MVVM.Android/Activities/TableDisplay.cs" Line="1" Column="1" />
-      <File FileName="MobileRef.MVVM/MobileRef.MVVM.Android/MainApp.cs" Line="1" Column="1" />
-      <File FileName="MobileRef.MVVM/MobileRef.MVVM.Shared/Services/RestService.cs" Line="152" Column="20" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS.Test/MVVMIOSTest.cs" Line="44" Column="37" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS/Controllers/MainView.designer.cs" Line="1" Column="1" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS/Framework/MVVMExtensions.cs" Line="557" Column="25" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS/Framework/VPExtensionHelpers.cs" Line="28" Column="30" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.Android.Test/MVVMAndroidTest.cs" Line="18" Column="28" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True" selected="True">
-          <Node name="MobileRef.MVVM" expanded="True">
-            <Node name="MobileRef.MVVM.IOS" expanded="True">
-              <Node name="References" expanded="True" />
-              <Node name="ComponentReferenceFolder" expanded="True" />
-            </Node>
-            <Node name="MobileRef.MVVM.Shared" expanded="True">
-              <Node name="Services" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

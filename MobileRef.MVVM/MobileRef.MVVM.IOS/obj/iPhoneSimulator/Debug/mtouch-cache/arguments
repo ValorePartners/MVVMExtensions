@@ -1,6 +1,6 @@
-# Version: 8.8.0.2 (ccfcd59)
+# Version: 8.8.2.4 (981acb3)
 # [first argument, ignore] # /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/8.8.0.2/bin/mtouch-64 \
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.8.2.4/bin/mtouch-64 \
 	--cache \
 	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
@@ -34,6 +34,8 @@
 	-r \
 	../packages/Newtonsoft.Json.6.0.8/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
 	-r \
+	../packages/Xamarin.TestCloud.Agent.0.13.0/lib/Xamarin.iOS10/Calabash.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
@@ -45,4 +47,6 @@
 	Library/Sterling.IOS.dll \
 	-r \
 	../packages/Newtonsoft.Json.6.0.8/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
+	-r \
+	../packages/Xamarin.TestCloud.Agent.0.13.0/lib/Xamarin.iOS10/Calabash.dll \
 	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug//MobileRefMVVMIOS.exe \

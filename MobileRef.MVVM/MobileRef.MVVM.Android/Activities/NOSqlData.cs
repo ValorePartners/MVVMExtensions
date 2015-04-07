@@ -23,6 +23,8 @@ namespace MobileRef.MVVM.Android
 		{
 			base.OnCreate (bundle);
 			Progress = new BindableHUD (this);
+			ActionBar.SetHomeButtonEnabled (true);
+			ActionBar.SetDisplayHomeAsUpEnabled (true);
 			VM = AppData.DatabaseVM;
 			bind = new BindingManager<NOSqlData, DatabaseViewModel> ();
 			SetContentView (Resource.Layout.NOSqlData);
@@ -48,6 +50,18 @@ namespace MobileRef.MVVM.Android
 			bind.UnRegisterBindingEvents (this);
 			AppData.SaveDatabaseVM ();
 			base.OnPause ();
+		}
+
+		public override bool OnOptionsItemSelected (IMenuItem item)
+		{
+			switch (item.ItemId) {
+			case global::Android.Resource.Id.Home:
+				Finish ();
+				return true;
+
+			default:
+				return base.OnOptionsItemSelected (item);
+			}
 		}
 
 		#region IHandlers implementation

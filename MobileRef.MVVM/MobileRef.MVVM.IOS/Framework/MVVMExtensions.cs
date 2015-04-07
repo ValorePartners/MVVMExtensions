@@ -555,9 +555,12 @@ namespace MobileRef.MVVM.IOS
 				var pn = prop.Name;
 				var pt = prop.PropertyType;
 				if (ControlUtil.ControlList.Contains (pt.Name)) {
-
+					var ctrl = prop.GetValue (obj);
+					if(ctrl is UIControl){
+						((UIControl)ctrl).AccessibilityIdentifier = prop.Name;
+					}
 					if (!ebs.Any (x => x.BindingObject == pn)) {
-						ControlUtil.HookUIControl (prop.GetValue (obj), obj);
+						ControlUtil.HookUIControl (ctrl, obj);
 					}
 				}
 				var ce = prop.GetCustomAttribute (typeof(RegisterEvent));

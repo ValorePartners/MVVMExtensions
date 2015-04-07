@@ -6,8 +6,6 @@ using Android.OS;
 using Android.Views;
 using Android.Widget;
 using MobileRef.MVVM.Shared;
-using System.Collections.Generic;
-
 
 namespace MobileRef.MVVM.Android
 {
@@ -16,11 +14,15 @@ namespace MobileRef.MVVM.Android
 	{
 
 		public EditText txtSearch{ get; private set; }
+
 		public Button btnSearch{ get; private set; }
+
 		public ListView lstWeather{ get; private set; }
 
-		public WeatherViewModel VM{ get; set;}
-		public BindableHUD Progress{ get; private set;}
+		public WeatherViewModel VM{ get; set; }
+
+		public BindableHUD Progress{ get; private set; }
+
 		private BindingManager<TableDisplay,WeatherViewModel> bind;
 
 		//Two ways to create and use a BaseAdapter
@@ -30,6 +32,9 @@ namespace MobileRef.MVVM.Android
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
+			ActionBar.SetHomeButtonEnabled (true);
+			ActionBar.SetDisplayHomeAsUpEnabled (true);
+
 			Progress = new BindableHUD (this);
 			VM = AppData.WeatherVM;
 			SetContentView (Resource.Layout.TableDisplay);
@@ -38,7 +43,7 @@ namespace MobileRef.MVVM.Android
 			bind.BindProperty (() => txtSearch.Text, () => VM.SearchLocation);
 			bind.BindProperty (() => Progress.Message, () => VM.LoadMessage);
 			bind.BindProperty (() => Progress.Visible, () => VM.IsLoading);
-			bind.BindCommand (() => btnSearch, ()=>VM.PerformSearch);
+			bind.BindCommand (() => btnSearch, () => VM.PerformSearch);
 		
 			//Two ways to create and use a BaseAdapter
 			//Adapter = new HolderAdapter<WeatherData, WeatherDataHolder> (this.LayoutInflater, VM.WeatherCollection.ToArray ());
@@ -55,6 +60,7 @@ namespace MobileRef.MVVM.Android
 			bind.RegisterBindingEvents (this, VM);
 			base.OnResume ();
 		}
+
 		protected override void OnPause ()
 		{
 			bind.UnRegisterBindingEvents (this);
@@ -79,6 +85,18 @@ namespace MobileRef.MVVM.Android
 			}
 		}
 
+		public override bool OnOptionsItemSelected (IMenuItem item)
+		{
+			switch (item.ItemId) {
+			case global::Android.Resource.Id.Home:
+				Finish ();
+				return true;
+
+			default:
+				return base.OnOptionsItemSelected (item);
+			}
+		}
+
 		public void ControlsHandler (object sender, System.EventArgs args)
 		{
 //			if (sender is ListView) {
@@ -95,50 +113,53 @@ namespace MobileRef.MVVM.Android
 
 
 	//This is an example of using the ViewHolder pattern with the HolderAdapter
-//	public class WeatherDataHolder:ViewHolder<WeatherData>{
-//
-//		public TextView txtDescription{ get; private set; }
-//		public TextView txtDate{ get; private set; }
-//		public ImageView imgWeather{ get; private set; }
-//	
-//
-//		public override void Init (View view)
-//		{
-//
-//			this.CreateControls<WeatherDataHolder> (view);
-//		}
-//
-//		public override void Populate (WeatherData item)
-//		{
-//			txtDescription.Text = item.description;
-//
-//			var dtDateTime = new DateTime(1970,1,1,0,0,0,0,DateTimeKind.Utc);
-//			dtDateTime = dtDateTime.AddSeconds( item.dt ).ToLocalTime();
-//			txtDate.Text = dtDateTime.ToLongDateString();
-//
-//			ImageDownloader.AssignImageAsync(imgWeather, item.icon);
-//		}
-//
-//		public override int CellResourceId {
-//			get {
-//				return Resource.Layout.WeatherCell;
-//			}
-//		}
-//
-//	}
+	//	public class WeatherDataHolder:ViewHolder<WeatherData>{
+	//
+	//		public TextView txtDescription{ get; private set; }
+	//		public TextView txtDate{ get; private set; }
+	//		public ImageView imgWeather{ get; private set; }
+	//
+	//
+	//		public override void Init (View view)
+	//		{
+	//
+	//			this.CreateControls<WeatherDataHolder> (view);
+	//		}
+	//
+	//		public override void Populate (WeatherData item)
+	//		{
+	//			txtDescription.Text = item.description;
+	//
+	//			var dtDateTime = new DateTime(1970,1,1,0,0,0,0,DateTimeKind.Utc);
+	//			dtDateTime = dtDateTime.AddSeconds( item.dt ).ToLocalTime();
+	//			txtDate.Text = dtDateTime.ToLongDateString();
+	//
+	//			ImageDownloader.AssignImageAsync(imgWeather, item.icon);
+	//		}
+	//
+	//		public override int CellResourceId {
+	//			get {
+	//				return Resource.Layout.WeatherCell;
+	//			}
+	//		}
+	//
+	//	}
 
 
 	//Explicit way to create a UITableViewSource. Databinding must use the IBaseAdapter
-	public class CustomSource:BaseAdapter<WeatherData>,IBaseAdapter{
+	public class CustomSource:BaseAdapter<WeatherData>,IBaseAdapter
+	{
 
 		public WeatherData[] Items{ get; set; }
+
 		private LayoutInflater inflator;
+
 		public CustomSource (WeatherData[] items, LayoutInflater inflator)
 		{
 			this.Items = items;
 			this.inflator = inflator;
 		}
-	
+
 		public void UpdateCollection (System.Collections.ICollection collection)
 		{
 //			var List = new List<WeatherData> ();
@@ -146,7 +167,7 @@ namespace MobileRef.MVVM.Android
 //				List.Add ((WeatherData)item);
 //			}
 //			Items = List.ToArray ();
-			Items = collection.ToArray<WeatherData>();
+			Items = collection.ToArray<WeatherData> ();
 			this.NotifyDataSetChanged ();
 		}
 
@@ -169,11 +190,11 @@ namespace MobileRef.MVVM.Android
 	
 			txtDescription.Text = item.description;
 
-			var dtDateTime = new DateTime(1970,1,1,0,0,0,0,DateTimeKind.Utc);
-			dtDateTime = dtDateTime.AddSeconds( item.dt ).ToLocalTime();
-			txtDate.Text = dtDateTime.ToLongDateString();
+			var dtDateTime = new DateTime (1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+			dtDateTime = dtDateTime.AddSeconds (item.dt).ToLocalTime ();
+			txtDate.Text = dtDateTime.ToLongDateString ();
 
-			ImageDownloader.AssignImageAsync(imgWeather, item.icon);
+			ImageDownloader.AssignImageAsync (imgWeather, item.icon);
 
 			return view;
 		}

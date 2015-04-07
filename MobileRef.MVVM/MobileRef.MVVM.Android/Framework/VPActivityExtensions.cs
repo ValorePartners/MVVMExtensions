@@ -115,7 +115,10 @@ namespace MobileRef.MVVM.Android
 				player.Start ();
 			}
 		}
-
+			
+		public static void GoBack(this Activity context){
+			context.OnBackPressed ();
+		}
 		public static void NavigateActivity<T> (this Activity context, bool finish = false)where T : Activity
 		{
 			var intent = new Intent (context, typeof(T));
@@ -124,7 +127,7 @@ namespace MobileRef.MVVM.Android
 				context.Finish ();
 
 		}
-
+			
 		public static void NavigateActivity<T> (this Activity context, Action<T> action, bool finish = false) where T : Activity
 		{
 			var intent = new Intent (context, typeof(T));

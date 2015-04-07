@@ -3,6 +3,7 @@ using Android.App;
 using Android.OS;
 using Android.Widget;
 using MobileRef.MVVM.Shared;
+using Android.Views;
 
 namespace MobileRef.MVVM.Android
 {
@@ -21,10 +22,12 @@ namespace MobileRef.MVVM.Android
 
 		protected override void OnCreate (Bundle bundle)
 		{
+	
 			base.OnCreate (bundle);
 			Progress = new BindableHUD (this);
 			VM = AppData.BindingVM;
-
+			ActionBar.SetHomeButtonEnabled (true);
+			ActionBar.SetDisplayHomeAsUpEnabled (true);
 			bind = new BindingManager<TwoWayBinding, BindingViewModel> ();
 			SetContentView (Resource.Layout.TwoWayBinding);
 
@@ -38,6 +41,7 @@ namespace MobileRef.MVVM.Android
 
 		}
 
+	
 		protected override void OnResume ()
 		{
 			bind.RegisterBindingEvents (this, VM);
@@ -50,6 +54,17 @@ namespace MobileRef.MVVM.Android
 			base.OnPause ();
 		}
 
+		public override bool OnOptionsItemSelected (IMenuItem item)
+		{
+			switch (item.ItemId) {
+			case global::Android.Resource.Id.Home:
+				Finish ();
+				return true;
+
+			default:
+				return base.OnOptionsItemSelected (item);
+			}
+		}
 
 		#region IHandlers implementation
 
