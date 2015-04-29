@@ -498,9 +498,6 @@ namespace MobileRef.MVVM.IOS
 
 		private string GetControlName (Expression<Func<object>> propertyRefExpr)
 		{
-//			var exp = ((MemberExpression)propertyRefExpr.Body);
-//			return ((MemberExpression)exp.Expression).Member.Name;
-
 			if (propertyRefExpr.Body is MemberExpression) {
 				var exp = ((MemberExpression)propertyRefExpr.Body);
 				return ((MemberExpression)exp.Expression).Member.Name;
@@ -557,7 +554,8 @@ namespace MobileRef.MVVM.IOS
 				if (ControlUtil.ControlList.Contains (pt.Name)) {
 					var ctrl = prop.GetValue (obj);
 					if(ctrl is UIControl){
-						((UIControl)ctrl).AccessibilityIdentifier = prop.Name;
+						((UIControl)ctrl).AccessibilityIdentifier = prop.Name; //allows for TestCloud integration
+						((UIControl)ctrl).AccessibilityLabel = prop.Name;
 					}
 					if (!ebs.Any (x => x.BindingObject == pn)) {
 						ControlUtil.HookUIControl (ctrl, obj);

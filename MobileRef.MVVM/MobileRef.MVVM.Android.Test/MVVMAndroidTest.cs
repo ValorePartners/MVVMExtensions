@@ -15,6 +15,7 @@ namespace MobileRef.MVVM.Android.Test
 		{
 			app = ConfigureApp
 				.Android
+				.ApiKey("7cf3315072fd4fa8a4f90a121b4a0e5a")
 				.ApkFile (pathToBinary)
 				.StartApp ();
 

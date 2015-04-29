@@ -105,11 +105,7 @@ namespace  MobileRef.MVVM.Shared
 			Console.WriteLine ("***************************");
 			#endif
 
-			#if __UnitTest__
-
-			#else
-
-			#endif
+			ReportingService.PostErrorAsync (ex, SeverityType.Handled, this.GetType ().Name, methodName);
 		}
 
 	}

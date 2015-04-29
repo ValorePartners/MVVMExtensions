@@ -1,18 +1,19 @@
 ﻿using Foundation;
 using UIKit;
 using MobileRef.MVVM.Shared;
+using System;
 
 
 namespace MobileRef.MVVM.IOS
 {
+
 	// The UIApplicationDelegate for the application. This class is responsible for launching the
 	// User Interface of the application, as well as listening (and optionally responding) to
 	// application events from iOS.
 	[Register ("AppDelegate")]
 	public partial class AppDelegate : UIApplicationDelegate
 	{
-		// class-level declarations
-		
+	                         
 		public override UIWindow Window {
 			get;
 			set;
@@ -20,9 +21,16 @@ namespace MobileRef.MVVM.IOS
 
 		public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
 		{
+			AppData.Device = DeviceType.IOS;
+
 			#if DEBUG
-			Xamarin.Calabash.Start();
+			Xamarin.Calabash.Start ();
 			#endif
+
+			this.RegisterUnhandledExceptions ((ex) => {
+				ReportingService.PostError (ex, SeverityType.Crash, this.GetType ().Name, "RegisterUnhandledExceptions");
+			});
+				
 
 			AppDb.Init ();
 			Preload.InitDatabase ();
@@ -58,6 +66,7 @@ namespace MobileRef.MVVM.IOS
 		// This method is called when the application is about to terminate. Save data, if needed.
 		public override void WillTerminate (UIApplication application)
 		{
+			AppDb.Close ();
 		}
 	}
 }

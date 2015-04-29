@@ -39,7 +39,7 @@ namespace  MobileRef.MVVM.Shared
 			if (credentials != null) {
 				handler.Credentials = credentials;
 			}
-			return new HttpClient (handler){Timeout = this.Timeout};
+			return new HttpClient (handler){ Timeout = this.Timeout };
 			#else
 			var handler = new HttpClientHandler ();
 			if(credentials!=null)
@@ -103,6 +103,19 @@ namespace  MobileRef.MVVM.Shared
 
 		}
 
+		public void PostNoReturn (string url, object obj)
+		{
+			try {
+				using (var client = GetClient (null)) {
+					var data = JsonConvert.SerializeObject (obj);
+					var response = client.PostAsync (url, new StringContent (data, Encoding.UTF8, "application/json")).Result;
+				}
+			} catch (Exception ex) {
+				if (ExceptionOccured != null)
+					ExceptionOccured (ex);
+			}
+		}
+
 		public async Task<T> PostAsync<T> (string url, object obj, NetworkCredential credentials) where T : class, new()
 		{
 			return await Task.Run (async () => {
@@ -123,7 +136,7 @@ namespace  MobileRef.MVVM.Shared
 			});
 		}
 
-			public async Task<T> PutAsync<T> (string url, object obj, NetworkCredential credentials) where T : class, new()
+		public async Task<T> PutAsync<T> (string url, object obj, NetworkCredential credentials) where T : class, new()
 		{
 			return await Task.Run (async () => {
 				try {

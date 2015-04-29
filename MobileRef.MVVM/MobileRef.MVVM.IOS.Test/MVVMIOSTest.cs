@@ -26,9 +26,12 @@ namespace MobileRef.MVVM.IOS.Test
 		{
 			var elements = app.WaitForElement (e => e.All (), "Nothing has loaded on the screen.");
 
+			app.Repl ();
+
+
 			app.Screenshot ("Home screen is displayed");
 
-			app.WaitForElement (e => e.Id ("btnSimpleMessage"));
+			app.WaitForElement (e => e.Marked ("btnSimpleMessage"));
 			app.Tap (e => e.Id ("btnSimpleMessage"));
 			app.Screenshot ("Simple message pressed");
 			app.Tap (e => e.Text ("Okay"));
@@ -43,7 +46,7 @@ namespace MobileRef.MVVM.IOS.Test
 			app.Screenshot ("ActionSheet pressed");
 			app.Tap (e => e.Text ("Melons"));
 				
-			app.Repl ();
+
 
 //			app.EnterText (e => e.Id ("custom"), "23");
 //			app.Tap (e => e.Text ("Save"));

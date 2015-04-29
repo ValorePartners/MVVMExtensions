@@ -1,0 +1,7 @@
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android.Test/obj/Release/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android.Test/bin/Release/MobileRef.MVVM.Android.Test.dll.mdb
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android.Test/bin/Release/MobileRef.MVVM.Android.Test.dll
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android.Test/obj/Release/MobileRef.MVVM.Android.Test.dll
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android.Test/obj/Release/MobileRef.MVVM.Android.Test.dll.mdb
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android.Test/bin/Release/nunit.framework.dll
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android.Test/bin/Release/Xamarin.UITest.dll

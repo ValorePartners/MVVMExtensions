@@ -110,6 +110,12 @@ namespace MobileRef.MVVM.Android
 
 		#endregion
 
+		protected override void OnDestroy ()
+		{
+			((MainApp)this.Application).ApplicationClosing ();
+			base.OnDestroy ();
+		}
+
 	}
 }
 

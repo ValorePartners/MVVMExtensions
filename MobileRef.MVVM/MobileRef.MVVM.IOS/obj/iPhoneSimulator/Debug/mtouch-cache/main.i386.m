@@ -17,6 +17,7 @@ void xamarin_setup ()
 {
 	xamarin_use_old_dynamic_registrar = FALSE;
 	xamarin_enable_debug_tracking = TRUE;
+	xamarin_init_mono_debug = TRUE;
 	xamarin_executable_name = "MobileRefMVVMIOS.exe";
 	xamarin_use_new_assemblies = 1;
 	mono_use_llvm = FALSE;

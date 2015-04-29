@@ -1,17 +1,34 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5.8.2" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MobileRef.MVVM/MobileRef.MVVM.Android.Test/MVVMAndroidTest.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5.8.3" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MobileRef.MVVM/MobileRef.MVVM.IOS/Framework/MVVMExtensions.cs">
     <Files>
-      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS.Test/MVVMIOSTest.cs" Line="44" Column="37" />
-      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS/Controllers/MainView.designer.cs" Line="1" Column="1" />
-      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS/Framework/MVVMExtensions.cs" Line="557" Column="25" />
-      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS/Framework/VPExtensionHelpers.cs" Line="28" Column="30" />
-      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="MobileRef.MVVM/MobileRef.MVVM.Android.Test/MVVMAndroidTest.cs" Line="18" Column="28" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS.Test/MVVMIOSTest.cs" Line="39" Column="38" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS/Controllers/MainView.cs" Line="21" Column="14" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS/Framework/MVVMExtensions.cs" Line="557" Column="3" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS/packages.config" Line="3" Column="85" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.Shared/Services/LocalStorageService.cs" Line="5" Column="7" />
     </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State name="__root__">
+          <Node name="MobileRefWorkSpace" expanded="True" selected="True">
+            <Node name="MobileRef.MVVM" expanded="True">
+              <Node name="UITesting" expanded="True">
+                <Node name="MobileRef.MVVM.IOS.Test" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS.Test/MVVMIOSTest.cs" line="29" column="1" />
+      <Breakpoint file="/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS.Test/MVVMIOSTest.cs" line="32" column="1" />
+      <Breakpoint file="/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/Framework/MVVMExtensions.cs" line="237" column="1" />
+      <Breakpoint file="/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/Framework/MVVMExtensions.cs" line="557" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

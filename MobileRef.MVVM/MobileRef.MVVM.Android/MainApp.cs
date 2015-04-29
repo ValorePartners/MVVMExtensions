@@ -19,6 +19,13 @@ namespace MobileRef.MVVM.Android
 		{
 			base.OnCreate ();
 
+			AppData.Device = DeviceType.ANDROID;
+
+			this.RegisterUnhandledExceptions ((ex) => {
+				ReportingService.PostError(ex, SeverityType.Crash,this.GetType().Name,"RegisterUnhandledExceptions");
+				ApplicationClosing();
+			});
+
 			//This makes sure that the control event and properties are not stripped by the linker 
 			LinkerPrepare.Init (this.ApplicationContext);
 
@@ -29,6 +36,14 @@ namespace MobileRef.MVVM.Android
 
 			AppDb.Init ();
 			Preload.InitDatabase ();
+		}
+
+
+		public void ApplicationClosing(){
+
+			//Do any necessary cleanup
+
+			AppDb.Close ();
 		}
 	}
 }

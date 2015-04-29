@@ -1,6 +1,7 @@
 using System;
 using UIKit;
 using MobileRef.MVVM.Shared;
+using System.Threading;
 
 namespace MobileRef.MVVM.IOS
 {
@@ -8,6 +9,11 @@ namespace MobileRef.MVVM.IOS
 	{
 		public MainView (IntPtr handle) : base (handle)
 		{
+		}
+
+		public override void ViewDidLoad ()
+		{
+			base.ViewDidLoad ();
 		}
 			
 		public override void ViewWillAppear (bool animated)
@@ -66,7 +72,21 @@ namespace MobileRef.MVVM.IOS
 				this.ShowLocalNotification ("Hello there", 1, 5, null);
 			}
 			if (sender == btnModalPopup) {
+	
+//				throw new NullReferenceException("test nre from ui thread.");
+//		
+//				ThreadPool.QueueUserWorkItem(unused =>
+//					{
+//						throw new NullReferenceException("test nre from back thread.");
+//					});
 
+				try {
+					int x = 10;
+					int y = 0;
+					int z = x/y;
+				} catch (Exception ex) {
+					//ReportingService.PostErrorAsync (ex);
+				}
 			}
 			if (sender == btnNavigateParams) {
 				this.PushController ("TwoWayBinding", "VM", new BindingViewModel (){ HelloText = "Just a test" });

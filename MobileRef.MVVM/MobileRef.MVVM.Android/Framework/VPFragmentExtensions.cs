@@ -31,6 +31,25 @@ namespace MobileRef.MVVM.Android
 
 	}
 
-	// THIS IS THE REACHABILITY PORTION OF THE CODE
+	/// <summary>
+	/// Crash reporting.  Provides extension to enable application level crash reporting
+	/// </summary>
+	public static class CrashReporting
+	{
+		public static void RegisterUnhandledExceptions(this Application app, Action<Exception> action){
+			AppDomain.CurrentDomain.UnhandledException += (s,e)=>
+			{
+				var ex = e.ExceptionObject as Exception;
+				action.Invoke(ex);
+			};
+
+			AndroidEnvironment.UnhandledExceptionRaiser += (s, e) =>
+			{
+				action.Invoke(e.Exception);
+				e.Handled = true;
+			};
+
+		}
+	}
 
 }

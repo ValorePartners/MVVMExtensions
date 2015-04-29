@@ -1,3 +1,3 @@
-﻿<Properties StartupItem="MobileRef.MVVM.IOS/MobileRef.MVVM.IOS.csproj">
+﻿<Properties StartupItem="MobileRef.MVVM.IOS.Test/MobileRef.MVVM.IOS.Test.csproj">
   <MonoDevelop.Ide.ItemProperties.MobileRef.MVVM.Android MonoForAntroid.PreferredDevice="Nexus 4" AndroidDesignerPreferredDevice="Nexus 4" />
 </Properties>
