@@ -11,6 +11,8 @@ Second, a basic MVVM implementation is provided allowing common controls to bind
 
 What is really important is that nothing is forced upon you.  You can choose to use only the features you like and nothing is implemented by inheritance.  Everything is either an extension or an interface.
 
+Tutorials: https://www.youtube.com/playlist?list=PLTT9vsmO-lqE0Icif6yscfmHmdxlBnaah
+
 ###Code Example
 
 This example displays how Android buttons are defined and the extension method CreateControls finds and instantiates them.  The onStart and OnStop methods are where we can register and unregister their events.  Download the entire project to view the entire implementation.
