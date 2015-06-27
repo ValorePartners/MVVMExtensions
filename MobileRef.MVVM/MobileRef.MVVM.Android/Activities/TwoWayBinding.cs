@@ -10,6 +10,9 @@ namespace MobileRef.MVVM.Android
 	[Activity (Label = "TwoWayBinding")]			
 	public class TwoWayBinding : Activity,IHandlers
 	{
+		public TextView lblAge{ get; private set; }
+		public EditText txtAge{ get; private set; }
+
 		public TextView lblHello{ get; private set; }
 		public EditText txtHello{ get; private set; }
 		public Button btnNavigate{ get; private set;}
@@ -33,6 +36,8 @@ namespace MobileRef.MVVM.Android
 
 			this.CreateControls<TwoWayBinding> ();
 
+			bind.BindProperty (() => lblAge.Text, () => VM.Age,"{0:c}");
+			bind.BindProperty (() => txtAge.Text, () => VM.Age);
 			bind.BindProperty (() => lblHello.Text, () => VM.HelloText);
 			bind.BindProperty (() => txtHello.Text, () => VM.HelloText);
 			bind.BindProperty (() => Progress.Message, () => VM.LoadMessage);

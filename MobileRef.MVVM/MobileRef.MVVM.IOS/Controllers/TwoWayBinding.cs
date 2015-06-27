@@ -22,6 +22,11 @@ namespace MobileRef.MVVM.IOS
 
 			bind.BindProperty (() => lblHello.Text, () => VM.HelloText);
 			bind.BindProperty (() => txtHello.Text, () => VM.HelloText);
+
+			bind.BindProperty (() => txtAlt.Text, () => VM.Age);
+			bind.BindProperty (() => lblAlt.Text, () => VM.Age);
+
+			//Age
 			bind.BindCommand (() => btnNavigate, () => VM.TestExecute);
 			bind.BindProperty (() => Progress.IsVisible, () => VM.IsLoading);
 			bind.BindProperty (() => Progress.LoadingMessage, () => VM.LoadMessage);

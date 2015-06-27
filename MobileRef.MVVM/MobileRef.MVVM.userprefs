@@ -1,3 +1,21 @@
-﻿<Properties StartupItem="MobileRef.MVVM.IOS.Test/MobileRef.MVVM.IOS.Test.csproj">
+﻿<Properties StartupItem="MobileRef.MVVM.IOS/MobileRef.MVVM.IOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (Jelly Bean -Update)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MobileRef.MVVM.IOS/Framework/MVVMExtensions.cs">
+    <Files>
+      <File FileName="MobileRef.MVVM.IOS/Framework/MVVMExtensions.cs" Line="384" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Shared/Services/RestService.cs" line="111" column="1" />
+      <Breakpoint file="/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Shared/Services/RestService.cs" line="114" column="1" />
+      <Breakpoint file="/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Shared/MobileMgt/BaseServices.cs" line="150" column="1" />
+      <Breakpoint file="/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Shared/MobileMgt/BaseServices.cs" line="138" column="1" />
+      <Breakpoint file="/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Shared/Services/RestService.cs" line="112" column="1" />
+      <Breakpoint file="/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Shared/ViewModels/BindingViewModel.cs" line="25" column="1" />
+      <Breakpoint file="/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/Framework/MVVMExtensions.cs" line="347" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.MobileRef.MVVM.Android MonoForAntroid.PreferredDevice="Nexus 4" AndroidDesignerPreferredDevice="Nexus 4" />
 </Properties>

@@ -1,14 +1,56 @@
-MobileRef.MVVM.Android.MainActivity;mobileref.mvvm.android.MainActivity
-MobileRef.MVVM.Android.TableDisplay;mobileref.mvvm.android.TableDisplay
-MobileRef.MVVM.Android.CustomSource;mobileref.mvvm.android.CustomSource
-MobileRef.MVVM.Android.NOSqlData;mobileref.mvvm.android.NOSqlData
-MobileRef.MVVM.Android.PeopleViewHolder;mobileref.mvvm.android.PeopleViewHolder
-MobileRef.MVVM.Android.TwoWayBinding;mobileref.mvvm.android.TwoWayBinding
-MobileRef.MVVM.Android.MainApp;mobileref.mvvm.android.MainApp
-MobileRef.MVVM.Android.ViewHolder`1;mobileref.mvvm.android.ViewHolder_1
-MobileRef.MVVM.Android.HolderAdapter`2;mobileref.mvvm.android.HolderAdapter_2
-MobileRef.MVVM.Android.NetworkStatusBroadcastReceiver;mobileref.mvvm.android.NetworkStatusBroadcastReceiver
-AndroidHUD.ProgressWheel;androidhud.ProgressWheel
-AndroidHUD.ProgressWheel.SpinHandler;androidhud.ProgressWheel_SpinHandler
-ModernHttpClient.AwaitableOkHttp.OkTaskCallback;modernhttpclient.AwaitableOkHttp_OkTaskCallback
-ModernHttpClient.HostnameVerifier;modernhttpclient.HostnameVerifier
+MobileRef.MVVM.Android.MainActivity, MobileRef.MVVM.Android;md5520d6fce9e82da752c437f890a0bd7ba.MainActivity
+MobileRef.MVVM.Android.MainActivity, MobileRef.MVVM.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5520d6fce9e82da752c437f890a0bd7ba.MainActivity
+MobileRef.MVVM.Android.MainActivity;md5520d6fce9e82da752c437f890a0bd7ba.MainActivity
+mobileref.mvvm.android.MainActivity;md5520d6fce9e82da752c437f890a0bd7ba.MainActivity
+MobileRef.MVVM.Android.TableDisplay, MobileRef.MVVM.Android;md5520d6fce9e82da752c437f890a0bd7ba.TableDisplay
+MobileRef.MVVM.Android.TableDisplay, MobileRef.MVVM.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5520d6fce9e82da752c437f890a0bd7ba.TableDisplay
+MobileRef.MVVM.Android.TableDisplay;md5520d6fce9e82da752c437f890a0bd7ba.TableDisplay
+mobileref.mvvm.android.TableDisplay;md5520d6fce9e82da752c437f890a0bd7ba.TableDisplay
+MobileRef.MVVM.Android.CustomSource, MobileRef.MVVM.Android;md5520d6fce9e82da752c437f890a0bd7ba.CustomSource
+MobileRef.MVVM.Android.CustomSource, MobileRef.MVVM.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5520d6fce9e82da752c437f890a0bd7ba.CustomSource
+MobileRef.MVVM.Android.CustomSource;md5520d6fce9e82da752c437f890a0bd7ba.CustomSource
+mobileref.mvvm.android.CustomSource;md5520d6fce9e82da752c437f890a0bd7ba.CustomSource
+MobileRef.MVVM.Android.NOSqlData, MobileRef.MVVM.Android;md5520d6fce9e82da752c437f890a0bd7ba.NOSqlData
+MobileRef.MVVM.Android.NOSqlData, MobileRef.MVVM.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5520d6fce9e82da752c437f890a0bd7ba.NOSqlData
+MobileRef.MVVM.Android.NOSqlData;md5520d6fce9e82da752c437f890a0bd7ba.NOSqlData
+mobileref.mvvm.android.NOSqlData;md5520d6fce9e82da752c437f890a0bd7ba.NOSqlData
+MobileRef.MVVM.Android.PeopleViewHolder, MobileRef.MVVM.Android;md5520d6fce9e82da752c437f890a0bd7ba.PeopleViewHolder
+MobileRef.MVVM.Android.PeopleViewHolder, MobileRef.MVVM.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5520d6fce9e82da752c437f890a0bd7ba.PeopleViewHolder
+MobileRef.MVVM.Android.PeopleViewHolder;md5520d6fce9e82da752c437f890a0bd7ba.PeopleViewHolder
+mobileref.mvvm.android.PeopleViewHolder;md5520d6fce9e82da752c437f890a0bd7ba.PeopleViewHolder
+MobileRef.MVVM.Android.TwoWayBinding, MobileRef.MVVM.Android;md5520d6fce9e82da752c437f890a0bd7ba.TwoWayBinding
+MobileRef.MVVM.Android.TwoWayBinding, MobileRef.MVVM.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5520d6fce9e82da752c437f890a0bd7ba.TwoWayBinding
+MobileRef.MVVM.Android.TwoWayBinding;md5520d6fce9e82da752c437f890a0bd7ba.TwoWayBinding
+mobileref.mvvm.android.TwoWayBinding;md5520d6fce9e82da752c437f890a0bd7ba.TwoWayBinding
+MobileRef.MVVM.Android.MainApp, MobileRef.MVVM.Android;md5520d6fce9e82da752c437f890a0bd7ba.MainApp
+MobileRef.MVVM.Android.MainApp, MobileRef.MVVM.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5520d6fce9e82da752c437f890a0bd7ba.MainApp
+MobileRef.MVVM.Android.MainApp;md5520d6fce9e82da752c437f890a0bd7ba.MainApp
+mobileref.mvvm.android.MainApp;md5520d6fce9e82da752c437f890a0bd7ba.MainApp
+MobileRef.MVVM.Android.ViewHolder`1, MobileRef.MVVM.Android;md5520d6fce9e82da752c437f890a0bd7ba.ViewHolder_1
+MobileRef.MVVM.Android.ViewHolder`1, MobileRef.MVVM.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5520d6fce9e82da752c437f890a0bd7ba.ViewHolder_1
+MobileRef.MVVM.Android.ViewHolder`1;md5520d6fce9e82da752c437f890a0bd7ba.ViewHolder_1
+mobileref.mvvm.android.ViewHolder_1;md5520d6fce9e82da752c437f890a0bd7ba.ViewHolder_1
+MobileRef.MVVM.Android.HolderAdapter`2, MobileRef.MVVM.Android;md5520d6fce9e82da752c437f890a0bd7ba.HolderAdapter_2
+MobileRef.MVVM.Android.HolderAdapter`2, MobileRef.MVVM.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5520d6fce9e82da752c437f890a0bd7ba.HolderAdapter_2
+MobileRef.MVVM.Android.HolderAdapter`2;md5520d6fce9e82da752c437f890a0bd7ba.HolderAdapter_2
+mobileref.mvvm.android.HolderAdapter_2;md5520d6fce9e82da752c437f890a0bd7ba.HolderAdapter_2
+MobileRef.MVVM.Android.NetworkStatusBroadcastReceiver, MobileRef.MVVM.Android;md5520d6fce9e82da752c437f890a0bd7ba.NetworkStatusBroadcastReceiver
+MobileRef.MVVM.Android.NetworkStatusBroadcastReceiver, MobileRef.MVVM.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5520d6fce9e82da752c437f890a0bd7ba.NetworkStatusBroadcastReceiver
+MobileRef.MVVM.Android.NetworkStatusBroadcastReceiver;md5520d6fce9e82da752c437f890a0bd7ba.NetworkStatusBroadcastReceiver
+mobileref.mvvm.android.NetworkStatusBroadcastReceiver;md5520d6fce9e82da752c437f890a0bd7ba.NetworkStatusBroadcastReceiver
+AndroidHUD.ProgressWheel, AndHUD;md5539939fcd5322368b18e9187b5e77d3d.ProgressWheel
+AndroidHUD.ProgressWheel, AndHUD, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5539939fcd5322368b18e9187b5e77d3d.ProgressWheel
+AndroidHUD.ProgressWheel;md5539939fcd5322368b18e9187b5e77d3d.ProgressWheel
+androidhud.ProgressWheel;md5539939fcd5322368b18e9187b5e77d3d.ProgressWheel
+AndroidHUD.ProgressWheel/SpinHandler, AndHUD;md5539939fcd5322368b18e9187b5e77d3d.ProgressWheel_SpinHandler
+AndroidHUD.ProgressWheel/SpinHandler, AndHUD, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5539939fcd5322368b18e9187b5e77d3d.ProgressWheel_SpinHandler
+AndroidHUD.ProgressWheel.SpinHandler;md5539939fcd5322368b18e9187b5e77d3d.ProgressWheel_SpinHandler
+androidhud.ProgressWheel_SpinHandler;md5539939fcd5322368b18e9187b5e77d3d.ProgressWheel_SpinHandler
+ModernHttpClient.AwaitableOkHttp/OkTaskCallback, ModernHttpClient;md5023b3034de488d294655fe435843fc75.AwaitableOkHttp_OkTaskCallback
+ModernHttpClient.AwaitableOkHttp/OkTaskCallback, ModernHttpClient, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null;md5023b3034de488d294655fe435843fc75.AwaitableOkHttp_OkTaskCallback
+ModernHttpClient.AwaitableOkHttp.OkTaskCallback;md5023b3034de488d294655fe435843fc75.AwaitableOkHttp_OkTaskCallback
+modernhttpclient.AwaitableOkHttp_OkTaskCallback;md5023b3034de488d294655fe435843fc75.AwaitableOkHttp_OkTaskCallback
+ModernHttpClient.HostnameVerifier, ModernHttpClient;md5023b3034de488d294655fe435843fc75.HostnameVerifier
+ModernHttpClient.HostnameVerifier, ModernHttpClient, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null;md5023b3034de488d294655fe435843fc75.HostnameVerifier
+ModernHttpClient.HostnameVerifier;md5023b3034de488d294655fe435843fc75.HostnameVerifier
+modernhttpclient.HostnameVerifier;md5023b3034de488d294655fe435843fc75.HostnameVerifier

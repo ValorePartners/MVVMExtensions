@@ -3,16 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>get-task-allow</key>
-	<false/>
+	<true/>
 	<key>application-identifier</key>
-	<string>6HU7Y4B6B6.com.scheduleviewer.mediroutes</string>
+	<string>BY726TB2DL.com.mobileref.mvvm</string>
 	<key>com.apple.developer.team-identifier</key>
-	<string>6HU7Y4B6B6</string>
+	<string>BY726TB2DL</string>
 	<key>aps-environment</key>
-	<string>production</string>
-	<key>keychain-access-groups</key>
-	<array>
-		<string>6HU7Y4B6B6.com.scheduleviewer.mediroutes</string>
-	</array>
+	<string>development</string>
 </dict>
 </plist>

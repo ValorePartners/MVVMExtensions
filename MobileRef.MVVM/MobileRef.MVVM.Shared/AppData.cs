@@ -10,9 +10,9 @@ namespace MobileRef.MVVM.Shared
 	public class AppData
 	{
 		#region Application constants
-		public const string ReportExceptionUrl = "http://mobiletracker7537.azurewebsites.net/api/MobileException/LogException";
-		public const string ReportAnalyticsUrl = "";
-		public const string RegisterDeviceUrl = "";
+		public const string ReportExceptionUrl = "http://mobilemgttemplate.azurewebsites.net/api/Reporting/LogException";
+		public const string ReportAnalyticsUrl = "http://mobilemgttemplate.azurewebsites.net/api/Analytics/LogTracking";
+		public const string RegisterDeviceUrl = "http://mobilemgttemplate.azurewebsites.net/api/PushNotification/AddRegistration";
 		public const string AppVersion = "1.0";
 		#endregion
 

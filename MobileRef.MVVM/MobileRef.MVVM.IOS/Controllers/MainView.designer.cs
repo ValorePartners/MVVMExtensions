@@ -16,6 +16,9 @@ namespace MobileRef.MVVM.IOS
 		UIKit.UIButton btnActionSheet { get; set; }
 
 		[Outlet]
+		UIKit.UIButton btnErrorAnalytics { get; set; }
+
+		[Outlet]
 		UIKit.UIButton btnInputDialog { get; set; }
 
 		[Outlet]
@@ -38,14 +41,9 @@ namespace MobileRef.MVVM.IOS
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (btnSimpleMessage != null) {
-				btnSimpleMessage.Dispose ();
-				btnSimpleMessage = null;
-			}
-
-			if (btnMultipleMessage != null) {
-				btnMultipleMessage.Dispose ();
-				btnMultipleMessage = null;
+			if (btnErrorAnalytics != null) {
+				btnErrorAnalytics.Dispose ();
+				btnErrorAnalytics = null;
 			}
 
 			if (btnActionSheet != null) {
@@ -68,14 +66,24 @@ namespace MobileRef.MVVM.IOS
 				btnModalPopup = null;
 			}
 
-			if (btnNavigateParams != null) {
-				btnNavigateParams.Dispose ();
-				btnNavigateParams = null;
+			if (btnMultipleMessage != null) {
+				btnMultipleMessage.Dispose ();
+				btnMultipleMessage = null;
 			}
 
 			if (btnNavigate != null) {
 				btnNavigate.Dispose ();
 				btnNavigate = null;
+			}
+
+			if (btnNavigateParams != null) {
+				btnNavigateParams.Dispose ();
+				btnNavigateParams = null;
+			}
+
+			if (btnSimpleMessage != null) {
+				btnSimpleMessage.Dispose ();
+				btnSimpleMessage = null;
 			}
 		}
 	}

@@ -22,7 +22,7 @@ namespace MobileRef.MVVM.Android
 			AppData.Device = DeviceType.ANDROID;
 
 			this.RegisterUnhandledExceptions ((ex) => {
-				ReportingService.PostError(ex, SeverityType.Crash,this.GetType().Name,"RegisterUnhandledExceptions");
+				ReportingService.PostError(ex, 1, SeverityType.Crash,this.GetType().Name,"RegisterUnhandledExceptions");
 				ApplicationClosing();
 			});
 

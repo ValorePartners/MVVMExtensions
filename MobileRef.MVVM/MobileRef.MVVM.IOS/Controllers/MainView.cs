@@ -37,6 +37,11 @@ namespace MobileRef.MVVM.IOS
 
 		public void ControlsHandler (object sender, EventArgs args)
 		{
+			if (sender == btnErrorAnalytics) {
+				TrackingService.LogAnalyticsAsync (2, 1, "MainView", "ios", "1");
+				var ex = new ApplicationException ("Test Exception");
+				ReportingService.PostErrorAsync (ex, 2, SeverityType.Handled, "MainView", "Click Event");
+			}
 			if (sender == btnSimpleMessage) {
 				this.ShowMessage ("Simple Message", "You clicked the button!");
 				return;
@@ -95,6 +100,7 @@ namespace MobileRef.MVVM.IOS
 			if (sender == btnNavigate) {
 				this.PushController ("NOSqlData");
 			}
+	
 
 		}
 

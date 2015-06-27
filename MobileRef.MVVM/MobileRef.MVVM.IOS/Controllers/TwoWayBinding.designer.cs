@@ -19,23 +19,19 @@ namespace MobileRef.MVVM.IOS
 		UIKit.UIButton btnTableBinding { get; set; }
 
 		[Outlet]
+		UIKit.UILabel lblAlt { get; set; }
+
+		[Outlet]
 		UIKit.UILabel lblHello { get; set; }
+
+		[Outlet]
+		UIKit.UITextField txtAlt { get; set; }
 
 		[Outlet]
 		UIKit.UITextField txtHello { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (lblHello != null) {
-				lblHello.Dispose ();
-				lblHello = null;
-			}
-
-			if (txtHello != null) {
-				txtHello.Dispose ();
-				txtHello = null;
-			}
-
 			if (btnNavigate != null) {
 				btnNavigate.Dispose ();
 				btnNavigate = null;
@@ -44,6 +40,26 @@ namespace MobileRef.MVVM.IOS
 			if (btnTableBinding != null) {
 				btnTableBinding.Dispose ();
 				btnTableBinding = null;
+			}
+
+			if (lblHello != null) {
+				lblHello.Dispose ();
+				lblHello = null;
+			}
+
+			if (txtAlt != null) {
+				txtAlt.Dispose ();
+				txtAlt = null;
+			}
+
+			if (txtHello != null) {
+				txtHello.Dispose ();
+				txtHello = null;
+			}
+
+			if (lblAlt != null) {
+				lblAlt.Dispose ();
+				lblAlt = null;
 			}
 		}
 	}

@@ -26,9 +26,6 @@ namespace MobileRef.MVVM.IOS.Test
 		{
 			var elements = app.WaitForElement (e => e.All (), "Nothing has loaded on the screen.");
 
-			app.Repl ();
-
-
 			app.Screenshot ("Home screen is displayed");
 
 			app.WaitForElement (e => e.Marked ("btnSimpleMessage"));

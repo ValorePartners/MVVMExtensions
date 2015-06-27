@@ -1,6 +1,6 @@
-# Version: 8.10.0.267 (6481535)
+# Version: 8.10.2.37 (ef8c2f7)
 # [first argument, ignore] # /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/8.10.0.267/bin/mtouch \
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.10.2.37/bin/mtouch \
 	--cache \
 	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
@@ -36,9 +36,9 @@
 	-r \
 	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/Library/Sterling.IOS.dll \
 	-r \
-	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/packages/Xamarin.TestCloud.Agent.0.14.0/lib/Xamarin.iOS10/Calabash.dll \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/packages/Xamarin.TestCloud.Agent.0.14.1/lib/Xamarin.iOS10/Calabash.dll \
 	-r \
-	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/packages/Newtonsoft.Json.6.0.8/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/packages/Newtonsoft.Json.7.0.1/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
@@ -50,7 +50,7 @@
 	-r \
 	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/Library/Sterling.IOS.dll \
 	-r \
-	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/packages/Xamarin.TestCloud.Agent.0.14.0/lib/Xamarin.iOS10/Calabash.dll \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/packages/Xamarin.TestCloud.Agent.0.14.1/lib/Xamarin.iOS10/Calabash.dll \
 	-r \
-	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/packages/Newtonsoft.Json.6.0.8/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/packages/Newtonsoft.Json.7.0.1/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
 	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug//MobileRefMVVMIOS.exe \

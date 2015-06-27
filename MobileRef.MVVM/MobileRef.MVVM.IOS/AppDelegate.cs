@@ -28,7 +28,7 @@ namespace MobileRef.MVVM.IOS
 			#endif
 
 			this.RegisterUnhandledExceptions ((ex) => {
-				ReportingService.PostError (ex, SeverityType.Crash, this.GetType ().Name, "RegisterUnhandledExceptions");
+				ReportingService.PostError (ex, 2, SeverityType.Crash, this.GetType ().Name, "RegisterUnhandledExceptions");
 			});
 				
 
@@ -42,6 +42,7 @@ namespace MobileRef.MVVM.IOS
 				AppData.IsConnected = state;
 			};
 			Reachability.Start ();
+			InitNotifications ();
 			return true;
 		}
 		
@@ -67,6 +68,26 @@ namespace MobileRef.MVVM.IOS
 		public override void WillTerminate (UIApplication application)
 		{
 			AppDb.Close ();
+		}
+
+		private void InitNotifications ()
+		{
+			var types = UIUserNotificationType.Alert | UIUserNotificationType.Badge;
+			var settings = UIUserNotificationSettings.GetSettingsForTypes (types, null);
+			UIApplication.SharedApplication.RegisterUserNotificationSettings (settings);
+			UIApplication.SharedApplication.RegisterForRemoteNotifications ();
+		}
+		public override void RegisteredForRemoteNotifications (UIApplication application, NSData deviceToken)
+		{
+			var registrationId = deviceToken.ToString ().Replace ("<", string.Empty).Replace (">", string.Empty).Replace (" ", string.Empty);
+			NotificationRegistrationService.LogAnalyticsAsync (2, 1, registrationId, "ios", "1");
+		}
+		public override void DidReceiveRemoteNotification (UIApplication application, NSDictionary userInfo, Action<UIBackgroundFetchResult> completionHandler)
+		{
+			if (null != userInfo && userInfo.ContainsKey (new NSString ("msg"))) {
+				var msg = (userInfo [new NSString ("msg")] as NSString).ToString ();
+				this.ShowMessage ("Notification", msg);
+			}
 		}
 	}
 }

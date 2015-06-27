@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>MobileRef.MVVM.IOS</string>
+	<string>MobileRef MVVM IOS</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.scheduleviewer.mediroutes</string>
+	<string>com.mobileref.mvvm</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>

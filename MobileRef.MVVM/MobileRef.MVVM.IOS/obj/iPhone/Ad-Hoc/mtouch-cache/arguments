@@ -1,6 +1,6 @@
-# Version: 8.9.1.3 (f7736a4)
+# Version: 8.10.1.64 (e6ebd18)
 # [first argument, ignore] # /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/8.9.1.3/bin/mtouch-64 \
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.10.1.64/bin/mtouch \
 	--cache \
 	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhone/Ad-Hoc/mtouch-cache \
 	--dev \
@@ -16,6 +16,9 @@
 	8.0 \
 	--new-refcount \
 	--abi=armv7,arm64 \
+	--symbollist \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhone/Ad-Hoc/mtouch-symbols.list \
+	--dsym=no \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
 	-r \
@@ -25,27 +28,27 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Net.Http.dll \
 	-r \
-	../Components/mbprogresshud-0.9.0.1/lib/ios-unified/MBProgressHUD.dll \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/Components/mbprogresshud-0.9.0.1/lib/ios-unified/MBProgressHUD.dll \
 	-r \
-	../Components/modernhttpclient-2.2.0/lib/ios-unified/ModernHttpClient.dll \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/Components/modernhttpclient-2.2.0/lib/ios-unified/ModernHttpClient.dll \
 	-r \
-	Library/Sterling.IOS.dll \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/Library/Sterling.IOS.dll \
 	-r \
-	../packages/Newtonsoft.Json.6.0.8/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/packages/Newtonsoft.Json.6.0.8/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
 	-r \
-	../packages/Xamarin.TestCloud.Agent.0.14.0/lib/Xamarin.iOS10/Calabash.dll \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/packages/Xamarin.TestCloud.Agent.0.14.1/lib/Xamarin.iOS10/Calabash.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	-r \
-	../Components/mbprogresshud-0.9.0.1/lib/ios-unified/MBProgressHUD.dll \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/Components/mbprogresshud-0.9.0.1/lib/ios-unified/MBProgressHUD.dll \
 	-r \
-	../Components/modernhttpclient-2.2.0/lib/ios-unified/ModernHttpClient.dll \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/Components/modernhttpclient-2.2.0/lib/ios-unified/ModernHttpClient.dll \
 	-r \
-	Library/Sterling.IOS.dll \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/Library/Sterling.IOS.dll \
 	-r \
-	../packages/Newtonsoft.Json.6.0.8/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/packages/Newtonsoft.Json.6.0.8/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
 	-r \
-	../packages/Xamarin.TestCloud.Agent.0.14.0/lib/Xamarin.iOS10/Calabash.dll \
+	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/packages/Xamarin.TestCloud.Agent.0.14.1/lib/Xamarin.iOS10/Calabash.dll \
 	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/bin/iPhone/Ad-Hoc//MobileRefMVVMIOS.exe \

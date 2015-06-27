@@ -32,8 +32,6 @@ void xamarin_register_modules ()
 
 void xamarin_register_assemblies ()
 {
-	xamarin_open_and_register ("Xamarin.iOS.dll");
-	xamarin_open_and_register ("MBProgressHUD.dll");
 
 }
 
@@ -41,6 +39,7 @@ void xamarin_setup ()
 {
 	xamarin_use_old_dynamic_registrar = FALSE;
 	xamarin_create_classes ();
+	xamarin_init_mono_debug = FALSE;
 	xamarin_executable_name = "MobileRefMVVMIOS.exe";
 	xamarin_use_new_assemblies = 1;
 	mono_use_llvm = FALSE;

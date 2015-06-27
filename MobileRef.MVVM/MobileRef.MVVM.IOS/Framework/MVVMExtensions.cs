@@ -12,6 +12,9 @@ using UIKit;
 
 namespace MobileRef.MVVM.IOS
 {
+	public class TagCounter{
+		public static nint Counter{get;set;}
+	}
 	public class LinkerPrepare
 	{
 		public static bool AlreadyPrepared{ get; set; }
@@ -146,7 +149,8 @@ namespace MobileRef.MVVM.IOS
 				BindingProperty = bindingProperty,
 				ViewModelProperty = viewModelProperty,
 				EventName = eventName,
-				Format = format
+				Format = format,
+				Tag = TagCounter.Counter++
 			});
 		}
 

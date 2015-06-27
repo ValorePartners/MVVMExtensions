@@ -105,7 +105,7 @@ namespace  MobileRef.MVVM.Shared
 			Console.WriteLine ("***************************");
 			#endif
 
-			ReportingService.PostErrorAsync (ex, SeverityType.Handled, this.GetType ().Name, methodName);
+			ReportingService.PostErrorAsync (ex, 1, SeverityType.Handled, this.GetType ().Name, methodName);
 		}
 
 	}

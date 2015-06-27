@@ -22,8 +22,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\SharedExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\LocalStorageService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\RestService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Services\ReportingService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\AnalyticsService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MobileMgt\BaseServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
@@ -31,6 +31,7 @@
     <Folder Include="$(MSBuildThisFileDirectory)Services\" />
     <Folder Include="$(MSBuildThisFileDirectory)Repositories\" />
     <Folder Include="$(MSBuildThisFileDirectory)Extensions\" />
+    <Folder Include="$(MSBuildThisFileDirectory)MobileMgt\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)nosql_reference.txt" />

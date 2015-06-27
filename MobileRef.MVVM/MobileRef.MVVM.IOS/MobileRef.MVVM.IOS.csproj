@@ -26,6 +26,8 @@
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
     <MtouchI18n>
     </MtouchI18n>
+    <CodesignKey>iPhone Developer: Les Brown (4VCQ3HNX38)</CodesignKey>
+    <CodesignProvision>54cb5f14-1ab5-4de9-a319-70ae9dca28da</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -85,8 +87,8 @@
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <IpaIncludeArtwork>true</IpaIncludeArtwork>
-    <CodesignKey>iPhone Distribution</CodesignKey>
-    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <CodesignKey>iPhone Developer: Les Brown (4VCQ3HNX38)</CodesignKey>
+    <CodesignProvision>54cb5f14-1ab5-4de9-a319-70ae9dca28da</CodesignProvision>
     <BuildIpa>true</BuildIpa>
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
     <IpaPackageName>
@@ -122,10 +124,10 @@
       <HintPath>Library\Sterling.IOS.dll</HintPath>
     </Reference>
     <Reference Include="Calabash">
-      <HintPath>..\packages\Xamarin.TestCloud.Agent.0.14.0\lib\Xamarin.iOS10\Calabash.dll</HintPath>
+      <HintPath>..\packages\Xamarin.TestCloud.Agent.0.14.1\lib\Xamarin.iOS10\Calabash.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
