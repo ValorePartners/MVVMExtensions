@@ -49,6 +49,9 @@ namespace MobileRef.MVVM.Android
 				lv.ItemClick += null;
 				lv.LongClick += null;
 
+				LinearLayout ll = new LinearLayout (ctx);
+				ll.Click += null;
+
 				AlreadyPrepared = true;
 			}
 		}
