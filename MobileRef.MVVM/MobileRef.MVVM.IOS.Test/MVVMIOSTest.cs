@@ -1,25 +1,37 @@
 ﻿using NUnit.Framework;
 using System;
 using Xamarin.UITest;
+using Xamarin.UITest.iOS;
 
 namespace MobileRef.MVVM.IOS.Test
 {
 	[TestFixture ()]
 	public class MVVMIOSTest
 	{
-		IApp app;
+		iOSApp app;
 
 		public string PathToIPA { get; private set; }
 
-		[TestFixtureSetUp]
-		public void TestFixtureSetup ()
+		[SetUp]
+		public void BeforeEachTest ()
 		{
-			PathToIPA = "../../../MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug/MobileRefMVVMIOS.app";
-			app = ConfigureApp.iOS
-					.EnableLocalScreenshots ()
-					.AppBundle (PathToIPA)
-					.StartApp ();
+						PathToIPA = "../../../MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug/MobileRefMVVMIOS.app";
+						app = ConfigureApp.iOS
+								.EnableLocalScreenshots ()
+								.ApiKey("7cf3315072fd4fa8a4f90a121b4a0e5a")
+								.AppBundle (PathToIPA)
+								.StartApp ();
 		}
+
+//		[TestFixtureSetUp]
+//		public void TestFixtureSetup ()
+//		{
+//			PathToIPA = "../../../MobileRef.MVVM.IOS/bin/iPhoneSimulator/Debug/MobileRefMVVMIOS.app";
+//			app = ConfigureApp.iOS
+//					.EnableLocalScreenshots ()
+//					.AppBundle (PathToIPA)
+//					.StartApp ();
+//		}
 
 		[TestCase (TestName = "Verify the app launches")]
 		public void IOSExtensionsTest ()

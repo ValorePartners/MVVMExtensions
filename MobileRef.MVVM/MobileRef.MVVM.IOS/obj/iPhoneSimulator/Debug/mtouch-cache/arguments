@@ -1,6 +1,6 @@
-# Version: 8.10.2.37 (ef8c2f7)
+# Version: 8.10.4.46 (2c66d2f)
 # [first argument, ignore] # /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/8.10.2.37/bin/mtouch \
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.10.4.46/bin/mtouch \
 	--cache \
 	/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
@@ -13,7 +13,7 @@
 	--sdkroot \
 	/Applications/Xcode.app/Contents/Developer \
 	--sdk \
-	8.3 \
+	8.4 \
 	--targetver \
 	8.0 \
 	--new-refcount \

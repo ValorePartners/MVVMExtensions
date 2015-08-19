@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="MobileRef.MVVM.IOS/MobileRef.MVVM.IOS.csproj">
+﻿<Properties StartupItem="MobileRef.MVVM.Android/MobileRef.MVVM.Android.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (Jelly Bean -Update)" />
   <MonoDevelop.Ide.Workbench ActiveDocument="MobileRef.MVVM.IOS/Framework/MVVMExtensions.cs">
     <Files>

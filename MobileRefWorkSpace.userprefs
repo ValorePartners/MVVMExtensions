@@ -1,33 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5.8.3" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MobileRef.MVVM/MobileRef.MVVM.IOS/Framework/MVVMExtensions.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MobileRef.MVVM/MobileRef.MVVM.Android/Framework/MVVMExtensions.cs">
     <Files>
-      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS.Test/MVVMIOSTest.cs" Line="39" Column="38" />
-      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS/Controllers/MainView.cs" Line="21" Column="14" />
-      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS/Framework/MVVMExtensions.cs" Line="557" Column="3" />
-      <File FileName="MobileRef.MVVM/MobileRef.MVVM.IOS/packages.config" Line="3" Column="85" />
-      <File FileName="MobileRef.MVVM/MobileRef.MVVM.Shared/Services/LocalStorageService.cs" Line="5" Column="7" />
+      <File FileName="MobileRef.MVVM/MobileRef.MVVM.Android/Framework/MVVMExtensions.cs" Line="58" Column="3" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State name="__root__">
-          <Node name="MobileRefWorkSpace" expanded="True" selected="True">
-            <Node name="MobileRef.MVVM" expanded="True">
-              <Node name="UITesting" expanded="True">
-                <Node name="MobileRef.MVVM.IOS.Test" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS.Test/MVVMIOSTest.cs" line="29" column="1" />
-      <Breakpoint file="/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS.Test/MVVMIOSTest.cs" line="32" column="1" />
-      <Breakpoint file="/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/Framework/MVVMExtensions.cs" line="237" column="1" />
-      <Breakpoint file="/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS/Framework/MVVMExtensions.cs" line="557" column="1" />
+      <Breakpoint file="/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS.Test/MVVMIOSTest.cs" line="41" column="1" />
+      <Breakpoint file="/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS.Test/MVVMIOSTest.cs" line="44" column="1" />
+      <Breakpoint file="/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS.Test/MVVMIOSTest.cs" line="18" column="1" />
+      <Breakpoint file="/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS.Test/MVVMIOSTest.cs" line="39" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

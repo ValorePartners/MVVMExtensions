@@ -2,6 +2,7 @@
 
 namespace MobileRef.MVVM.Shared
 {
+
 	public enum DeviceType{
 		IOS,
 		ANDROID,

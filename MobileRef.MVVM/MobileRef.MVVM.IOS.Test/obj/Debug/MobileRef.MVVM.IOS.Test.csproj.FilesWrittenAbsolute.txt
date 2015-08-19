@@ -3,5 +3,5 @@
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS.Test/bin/Debug/MobileRef.MVVM.IOS.Test.dll
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS.Test/obj/Debug/MobileRef.MVVM.IOS.Test.dll
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS.Test/obj/Debug/MobileRef.MVVM.IOS.Test.dll.mdb
-/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS.Test/bin/Debug/Xamarin.UITest.dll
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS.Test/bin/Debug/nunit.framework.dll
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.IOS.Test/bin/Debug/Xamarin.UITest.dll

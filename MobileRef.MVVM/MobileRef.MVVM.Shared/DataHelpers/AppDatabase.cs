@@ -3,6 +3,7 @@ using Wintellect.Sterling.Database;
 using Wintellect.Sterling;
 using Wintellect.Sterling.IsolatedStorage;
 using Sterling.Common;
+using System.Collections.Generic;
 
 namespace MobileRef.MVVM.Shared
 {
@@ -20,7 +21,6 @@ namespace MobileRef.MVVM.Shared
 		{
 			var list = new System.Collections.Generic.List<ITableDefinition>();
 			list.Add(CreateTableDefinition<Person ,int>(i => i.Id));
-
 			return list;
 		}
 	}
@@ -58,6 +58,7 @@ namespace MobileRef.MVVM.Shared
 
 			var maxPdx = _database.GetIntegerIndex<Person>();
 			_database.RegisterTrigger<Person, int>(new IntTrigger<Person>(maxPdx,"Id"));
+	
 
 		}
 

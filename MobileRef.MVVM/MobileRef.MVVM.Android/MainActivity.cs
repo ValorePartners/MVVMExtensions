@@ -24,6 +24,8 @@ namespace MobileRef.MVVM.Android
 
 		public Button btnProgress{ get; private set; }
 
+		public Button btnExit{ get; private set; }
+
 		public VMBase VM { get; set; }
 
 
@@ -102,6 +104,9 @@ namespace MobileRef.MVVM.Android
 					break;
 				case Resource.Id.btnProgress:
 					//VM.LongExecution ();
+					break;
+				case Resource.Id.btnExit:
+					this.ExitApplication ();
 					break;
 				}
 

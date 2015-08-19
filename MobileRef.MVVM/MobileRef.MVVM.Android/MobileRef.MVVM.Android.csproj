@@ -38,6 +38,7 @@
     <ConsolePause>false</ConsolePause>
     <AndroidLinkSkip>System.Net.Http</AndroidLinkSkip>
     <DebugSymbols>true</DebugSymbols>
+    <AndroidSupportedAbis>armeabi;armeabi-v7a;x86;arm64-v8a;x86_64</AndroidSupportedAbis>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

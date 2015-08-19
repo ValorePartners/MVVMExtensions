@@ -55,7 +55,7 @@
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchProfiling>true</MtouchProfiling>
-    <CodesignKey>iPhone Developer: Stephen Smith (4W8T7ZMU7B)</CodesignKey>
+    <CodesignKey>iPhone Developer: Les Brown (4VCQ3HNX38)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <MtouchExtraArgs>--linkskip=Sterling.IOS</MtouchExtraArgs>
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
@@ -64,7 +64,7 @@
     <MtouchI18n>
     </MtouchI18n>
     <BuildIpa>true</BuildIpa>
-    <CodesignProvision>c20017ab-ace8-41fe-b773-366ac777c58b</CodesignProvision>
+    <CodesignProvision>54cb5f14-1ab5-4de9-a319-70ae9dca28da</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>

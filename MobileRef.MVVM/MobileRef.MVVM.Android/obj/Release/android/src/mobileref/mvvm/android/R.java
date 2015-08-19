@@ -130,28 +130,31 @@ containing a value of this type.
         public static final int roundedbgdark=0x7f020004;
     }
     public static final class id {
+        public static final int btnExit=0x7f05000a;
         public static final int btnInputDialog=0x7f050006;
         public static final int btnMultipleMessage=0x7f050005;
         public static final int btnNavigate=0x7f050008;
         public static final int btnNavigateParams=0x7f050007;
         public static final int btnProgress=0x7f050009;
-        public static final int btnSearch=0x7f05000c;
+        public static final int btnSearch=0x7f05000d;
         public static final int btnSimpleMessage=0x7f050004;
-        public static final int btnTableBinding=0x7f050011;
-        public static final int imgWeather=0x7f050012;
-        public static final int lblHello=0x7f050010;
-        public static final int linearLayout1=0x7f05000a;
-        public static final int linearLayout2=0x7f050013;
+        public static final int btnTableBinding=0x7f050014;
+        public static final int imgWeather=0x7f050015;
+        public static final int lblAge=0x7f050011;
+        public static final int lblHello=0x7f050013;
+        public static final int linearLayout1=0x7f05000b;
+        public static final int linearLayout2=0x7f050016;
         public static final int loadingImage=0x7f050002;
         public static final int loadingProgressBar=0x7f050000;
         public static final int loadingProgressWheel=0x7f050003;
-        public static final int lstPeople=0x7f05000d;
-        public static final int lstWeather=0x7f05000e;
+        public static final int lstPeople=0x7f05000e;
+        public static final int lstWeather=0x7f05000f;
         public static final int textViewStatus=0x7f050001;
-        public static final int txtDate=0x7f050015;
-        public static final int txtDescription=0x7f050014;
-        public static final int txtHello=0x7f05000f;
-        public static final int txtSearch=0x7f05000b;
+        public static final int txtAge=0x7f050010;
+        public static final int txtDate=0x7f050018;
+        public static final int txtDescription=0x7f050017;
+        public static final int txtHello=0x7f050012;
+        public static final int txtSearch=0x7f05000c;
     }
     public static final class layout {
         public static final int loading=0x7f030000;

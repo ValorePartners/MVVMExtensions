@@ -147,6 +147,9 @@ namespace MobileRef.MVVM.Android
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f05000a
+			public const int btnExit = 2131034122;
+			
 			// aapt resource value: 0x7f050006
 			public const int btnInputDialog = 2131034118;
 			
@@ -162,29 +165,29 @@ namespace MobileRef.MVVM.Android
 			// aapt resource value: 0x7f050009
 			public const int btnProgress = 2131034121;
 			
-			// aapt resource value: 0x7f05000c
-			public const int btnSearch = 2131034124;
+			// aapt resource value: 0x7f05000d
+			public const int btnSearch = 2131034125;
 			
 			// aapt resource value: 0x7f050004
 			public const int btnSimpleMessage = 2131034116;
 			
-			// aapt resource value: 0x7f050013
-			public const int btnTableBinding = 2131034131;
-			
 			// aapt resource value: 0x7f050014
-			public const int imgWeather = 2131034132;
-			
-			// aapt resource value: 0x7f050010
-			public const int lblAge = 2131034128;
-			
-			// aapt resource value: 0x7f050012
-			public const int lblHello = 2131034130;
-			
-			// aapt resource value: 0x7f05000a
-			public const int linearLayout1 = 2131034122;
+			public const int btnTableBinding = 2131034132;
 			
 			// aapt resource value: 0x7f050015
-			public const int linearLayout2 = 2131034133;
+			public const int imgWeather = 2131034133;
+			
+			// aapt resource value: 0x7f050011
+			public const int lblAge = 2131034129;
+			
+			// aapt resource value: 0x7f050013
+			public const int lblHello = 2131034131;
+			
+			// aapt resource value: 0x7f05000b
+			public const int linearLayout1 = 2131034123;
+			
+			// aapt resource value: 0x7f050016
+			public const int linearLayout2 = 2131034134;
 			
 			// aapt resource value: 0x7f050002
 			public const int loadingImage = 2131034114;
@@ -195,29 +198,29 @@ namespace MobileRef.MVVM.Android
 			// aapt resource value: 0x7f050003
 			public const int loadingProgressWheel = 2131034115;
 			
-			// aapt resource value: 0x7f05000d
-			public const int lstPeople = 2131034125;
-			
 			// aapt resource value: 0x7f05000e
-			public const int lstWeather = 2131034126;
+			public const int lstPeople = 2131034126;
+			
+			// aapt resource value: 0x7f05000f
+			public const int lstWeather = 2131034127;
 			
 			// aapt resource value: 0x7f050001
 			public const int textViewStatus = 2131034113;
 			
-			// aapt resource value: 0x7f05000f
-			public const int txtAge = 2131034127;
+			// aapt resource value: 0x7f050010
+			public const int txtAge = 2131034128;
+			
+			// aapt resource value: 0x7f050018
+			public const int txtDate = 2131034136;
 			
 			// aapt resource value: 0x7f050017
-			public const int txtDate = 2131034135;
+			public const int txtDescription = 2131034135;
 			
-			// aapt resource value: 0x7f050016
-			public const int txtDescription = 2131034134;
+			// aapt resource value: 0x7f050012
+			public const int txtHello = 2131034130;
 			
-			// aapt resource value: 0x7f050011
-			public const int txtHello = 2131034129;
-			
-			// aapt resource value: 0x7f05000b
-			public const int txtSearch = 2131034123;
+			// aapt resource value: 0x7f05000c
+			public const int txtSearch = 2131034124;
 			
 			static Id()
 			{

@@ -1,6 +1,13 @@
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android/obj/Debug/assemblies/MobileRef.MVVM.Android.dll
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android/obj/Debug/assemblies/System.dll
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android/obj/Debug/assemblies/System.Xml.dll
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android/obj/Debug/assemblies/Mono.Android.dll
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android/obj/Debug/assemblies/System.Net.Http.dll
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android/obj/Debug/assemblies/AndHUD.dll
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android/obj/Debug/assemblies/ModernHttpClient.dll
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android/obj/Debug/assemblies/OkHttp.dll
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android/obj/Debug/assemblies/Sterling.Android.dll
 /Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android/obj/Debug/assemblies/Newtonsoft.Json.dll
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android/obj/Debug/assemblies/System.Core.dll
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android/obj/Debug/assemblies/mscorlib.dll
+/Users/Les/Documents/MVVMExtensions/MobileRef.MVVM/MobileRef.MVVM.Android/obj/Debug/assemblies/System.Runtime.Serialization.dll

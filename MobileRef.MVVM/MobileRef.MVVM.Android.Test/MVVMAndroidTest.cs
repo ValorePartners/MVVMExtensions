@@ -13,9 +13,10 @@ namespace MobileRef.MVVM.Android.Test
 		[SetUp]
 		public void Setup ()
 		{
-			//app = ConfigureApp.Android.ApkFile (pathToBinary).StartApp ();
+			
 			app = ConfigureApp
 				.Android
+				.DeviceIp("10.71.34.101")
 				.ApiKey("7cf3315072fd4fa8a4f90a121b4a0e5a")
 				.ApkFile (pathToBinary)
 				.StartApp ();
